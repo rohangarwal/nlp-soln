@@ -2,6 +2,7 @@
 Minimal character-level Vanilla RNN model. Written by Andrej Karpathy (@karpathy)
 BSD License
 """
+import pickle
 import numpy as np
 
 # data I/O
@@ -13,7 +14,7 @@ char_to_ix = { ch:i for i,ch in enumerate(chars) }
 #ix_to_char = { i:ch for i,ch in enumerate(chars) }
 
 # hyperparameters
-hidden_size = 32 # size of hidden layer of neurons
+hidden_size = 16 # size of hidden layer of neurons
 learning_rate = 1e-1
 
 # model parameters
@@ -30,7 +31,6 @@ by = np.zeros((vocab_size, 1)) # output bias
 xsf, hsf = {}, {}
 xsb, hsb = {}, {}
 ys, ps = {}, {}
-loss = 0
 
 def fwd(inputs,hprev):  
   hsf[-1] = np.copy(hprev)
@@ -57,7 +57,7 @@ def fwdback(hsf,ps):
     dhnext = np.dot(Whhf.T, dhraw)
   for dparam in [dWxh, dWhh, dWhy, dbh, dby]:
     np.clip(dparam, -5, 5, out=dparam) # clip to mitigate exploding gradients
-  return loss, dWxh, dWhh, dWhy, dbh, dby, hsf[len(inputs)-1]
+  return dWxh, dWhh, dWhy, dbh, dby, hsf[len(inputs)-1]
 
 def bwd(inputs,hprev):
   hsb[len(inputs)] = np.copy(hprev)
@@ -84,14 +84,10 @@ def bwdforward(hsb,ps):
     dhnext = np.dot(Whhb.T, dhraw)
   for dparam in [dWxh, dWhh, dWhy, dbh, dby]:
     np.clip(dparam, -5, 5, out=dparam) # clip to mitigate exploding gradients
-  return loss, dWxh, dWhh, dWhy, dbh, hsb[len(inputs)]
+  return dWxh, dWhh, dWhy, dbh, hsb[len(inputs)]
 
-def lossFun(inputs, targets, hprev, hpost):
-  """
-  inputs,targets are both list of integers.
-  hprev is Hx1 array of initial hidden state
-  returns the loss, gradients on model parameters, and last hidden state
-  """
+def train(inputs, targets, hprev, hpost):
+  
   loss = 0
   # forward pass
   hf = fwd(inputs,hprev)
@@ -100,23 +96,14 @@ def lossFun(inputs, targets, hprev, hpost):
   for t in range(len(inputs)):
     ys[t] = np.dot(Whyf, hf[t]) + np.dot(Whyb, hb[t]) + by # unnormalized log probabilities for next chars
     ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t])) # probabilities for next chars
-    #loss += -np.log(ps[t][targets[t],0]) # softmax (cross-entropy loss)
+    
+    loss += -np.log(ps[t][targets[t],0]) # softmax (cross-entropy loss)
 
-  loss, dWxhf, dWhhf, dWhyf, dbhf, dby, hprev = fwdback(hf,ps) 
-  loss, dWxhb, dWhhb, dWhyb, dbhb, hpost = bwdforward(hb,ps) 
-  return dWxhf, dWhhf, dWhyf, dbhf, dby, hprev, dWxhb, dWhhb, dWhyb, dbhb, hpost
+  dWxhf, dWhhf, dWhyf, dbhf, dby, hprev = fwdback(hf,ps) 
+  dWxhb, dWhhb, dWhyb, dbhb, hpost = bwdforward(hb,ps) 
+  return loss, dWxhf, dWhhf, dWhyf, dbhf, dby, hprev, dWxhb, dWhhb, dWhyb, dbhb, hpost
   # backward pass: compute gradients going backwards
   
-def test(inputs,hprev,hpost):
-  hf = fwd(inputs,hprev)
-  hb = bwd(inputs,hpost)
-  for t in range(len(inputs)):
-    ys[t] = np.dot(Whyf, hf[t]) + np.dot(Whyb, hb[t]) + by # unnormalized log probabilities for next chars
-    ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t])) # probabilities for next chars
-    print("p, t = ", np.argmax(ps[t]), t)
-  print("**********")
-  
-#seq_length, p = 4, 0
 mWxhf, mWhhf, mWhyf = np.zeros_like(Wxhf), np.zeros_like(Whhf), np.zeros_like(Whyf)
 mbhf, mby = np.zeros_like(bhf), np.zeros_like(by) # memory variables for Adagrad
 
@@ -133,8 +120,9 @@ for n,mn in enumerate(data):
   # prepare inputs (we're sweeping from left to right in steps seq_length long)
   
   # forward seq_length characters through the net and fetch gradient
-  dWxhf, dWhhf, dWhyf, dbhf, dby, hprev, dWxhb, dWhhb, dWhyb, dbhb, hpost = lossFun(inputs, targets, hprev, hpost)
+  loss, dWxhf, dWhhf, dWhyf, dbhf, dby, hprev, dWxhb, dWhhb, dWhyb, dbhb, hpost = train(inputs, targets, hprev, hpost)
 
+  
   #smooth_loss = smooth_loss * 0.999 + loss * 0.001
   #if n % 2 == 0: print 'iter %d, loss: %f' % (n, smooth_loss) # print progress
 
@@ -146,5 +134,19 @@ for n,mn in enumerate(data):
     mem += dparam * dparam
     param += -learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
 
-test_sample = [3,1,8,23,5,9]
-test(test_sample,hprev,hpost)
+parameter_dict = {}
+parameter_dict['hprev'] = hprev
+parameter_dict['hpost'] = hpost
+parameter_dict['Whyf'] = Whyf
+parameter_dict['Whyb'] = Whyb
+parameter_dict['by'] = by
+parameter_dict['Wxhf'] = Wxhf
+parameter_dict['Whhf'] = Whhf
+parameter_dict['bhf'] = bhf
+parameter_dict['Wxhb'] = Wxhb
+parameter_dict['Whhb'] = Whhb
+parameter_dict['bhb'] = bhb
+
+fi = open("model.pkl", "wb")
+pickle.dump(parameter_dict,fi)
+fi.close()
