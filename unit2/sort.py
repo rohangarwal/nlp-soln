@@ -1,6 +1,5 @@
 """
-Minimal character-level Vanilla RNN model. Written by Andrej Karpathy (@karpathy)
-BSD License
+BI-Directional RNN written by us...
 """
 import pickle
 import numpy as np
@@ -32,7 +31,7 @@ xsf, hsf = {}, {}
 xsb, hsb = {}, {}
 ys, ps = {}, {}
 
-def fwd(inputs,hprev):  
+def fwd(inputs,hprev):
   hsf[-1] = np.copy(hprev)
   for t in xrange(len(inputs)):
     xsf[t] = np.zeros((vocab_size,1)) # encode in 1-of-k representation
@@ -87,7 +86,6 @@ def bwdforward(hsb,ps):
   return dWxh, dWhh, dWhy, dbh, hsb[len(inputs)]
 
 def train(inputs, targets, hprev, hpost):
-  
   loss = 0
   # forward pass
   hf = fwd(inputs,hprev)
@@ -96,14 +94,14 @@ def train(inputs, targets, hprev, hpost):
   for t in range(len(inputs)):
     ys[t] = np.dot(Whyf, hf[t]) + np.dot(Whyb, hb[t]) + by # unnormalized log probabilities for next chars
     ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t])) # probabilities for next chars
-    
+
     loss += -np.log(ps[t][targets[t],0]) # softmax (cross-entropy loss)
 
-  dWxhf, dWhhf, dWhyf, dbhf, dby, hprev = fwdback(hf,ps) 
-  dWxhb, dWhhb, dWhyb, dbhb, hpost = bwdforward(hb,ps) 
+  dWxhf, dWhhf, dWhyf, dbhf, dby, hprev = fwdback(hf,ps)
+  dWxhb, dWhhb, dWhyb, dbhb, hpost = bwdforward(hb,ps)
   return loss, dWxhf, dWhhf, dWhyf, dbhf, dby, hprev, dWxhb, dWhhb, dWhyb, dbhb, hpost
   # backward pass: compute gradients going backwards
-  
+
 mWxhf, mWhhf, mWhyf = np.zeros_like(Wxhf), np.zeros_like(Whhf), np.zeros_like(Whyf)
 mbhf, mby = np.zeros_like(bhf), np.zeros_like(by) # memory variables for Adagrad
 
@@ -118,11 +116,10 @@ for n,mn in enumerate(data):
   targets = [char_to_ix[ch] for ch in sorted(mn, key = lambda x : int(x))]
 
   # prepare inputs (we're sweeping from left to right in steps seq_length long)
-  
+
   # forward seq_length characters through the net and fetch gradient
   loss, dWxhf, dWhhf, dWhyf, dbhf, dby, hprev, dWxhb, dWhhb, dWhyb, dbhb, hpost = train(inputs, targets, hprev, hpost)
 
-  
   #smooth_loss = smooth_loss * 0.999 + loss * 0.001
   #if n % 2 == 0: print 'iter %d, loss: %f' % (n, smooth_loss) # print progress
 

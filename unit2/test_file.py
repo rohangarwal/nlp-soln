@@ -1,7 +1,7 @@
 import pickle
 import numpy as np
 
-def fwd(inputs,hprev):  
+def fwd(inputs,hprev):
   hsf[-1] = np.copy(hprev)
   for t in xrange(len(inputs)):
     xsf[t] = np.zeros((vocab_size,1)) # encode in 1-of-k representation
@@ -24,6 +24,9 @@ def test(inputs,hprev,hpost):
     ys[t] = np.dot(Whyf, hf[t]) + np.dot(Whyb, hb[t]) + by # unnormalized log probabilities for next chars
     ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t])) # probabilities for next chars
     print str(np.argmax(ps[t])) + " ",
+
+  print
+
 
 if __name__ == '__main__':
 	chars = [str(x) for x in range(32)]
