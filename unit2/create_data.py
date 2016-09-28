@@ -10,7 +10,12 @@ for i in range(N):
     ls = list(map(str,ls))
     tmp.append(" ".join(ls))
     
-ftrain = open("train_"+str(N)+".in", "w")
-ftest = open("test_"+str(N)+".in", "w")   
+ftrain = open("inputs/train_"+str(N)+".in", "w")
+ftest = open("inputs/test_"+str(N)+".in", "w")   
 ftrain.write("\n".join(tmp[:int(N*0.8)]))
 ftest.write("\n".join(tmp[int(N*0.8):]))
+
+ftherotical = open('results/therotical_'+str(N)+'.out', 'w')
+s = [sorted(list(map(int, x.split(" ")))) for x in tmp[int(N*0.8):]]
+s = '\n'.join([' '.join([str(j) for j in x]) for x in s])
+ftherotical.write(s)

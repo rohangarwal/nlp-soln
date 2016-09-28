@@ -3,9 +3,10 @@ BI-Directional RNN written by us...
 """
 import pickle
 import numpy as np
+import sys
 
 # data I/O
-dt = open('dataset.in', 'r').read().split("\n") # should be simple plain text file
+dt = open("inputs/train_"+sys.argv[1]+".in", 'r').read().split("\n") # should be simple plain text file
 data = [x.split() for x in dt]
 chars = [str(x) for x in range(32)]
 vocab_size = 32
@@ -144,6 +145,6 @@ parameter_dict['Wxhb'] = Wxhb
 parameter_dict['Whhb'] = Whhb
 parameter_dict['bhb'] = bhb
 
-fi = open("model.pkl", "wb")
+fi = open("models/model_"+sys.argv[1]+".pkl", "wb")
 pickle.dump(parameter_dict,fi)
 fi.close()

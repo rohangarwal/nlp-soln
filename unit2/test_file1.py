@@ -18,32 +18,16 @@ def bwd(inputs,hprev):
     hsb[t] = np.tanh(np.dot(Wxhb, xsb[t]) + np.dot(Whhb, hsb[t+1]) + bhb) # hidden state
   return hsb
 
-def highprob(ps, inputs, temp):
-	prob = np.zeros_like(ps)
-	for k in inputs:
-		prob[k] = ps[k]
-	ele = ''
-	while True:
-		ele = str(np.argmax(prob))
-		if ele not in temp:
-			break
-		else:
-			prob[int(ele)] = 0
-	return ele
-
-
-
 def test(inputs,hprev,hpost):
-  temp = []
   hf = fwd(inputs,hprev)
   hb = bwd(inputs,hpost)
+  temp = []
   for t in range(len(inputs)):
     ys[t] = np.dot(Whyf, hf[t]) + np.dot(Whyb, hb[t]) + by # unnormalized log probabilities for next chars
     ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t])) # probabilities for next chars
-    ele = highprob(ps[t], inputs, temp)
-    temp.append(ele)
+    temp.append(str(np.argmax(ps[t])))
 
-  return " ".join(temp)
+  return ' '.join(temp)
 
 
 if __name__ == '__main__':
@@ -71,11 +55,12 @@ if __name__ == '__main__':
 
 	dt = open('inputs/test_'+sys.argv[1]+'.in', 'r').read().split("\n") # should be simple plain text file
 	data = [x.split() for x in dt]
-	out = open('results/test_'+sys.argv[1]+'_2.out', 'w')
+	out = open('results/test_'+sys.argv[1]+'_1.out', 'w')
 	tmp = []
 	for t in data:
 		inputs = [char_to_ix[ch] for ch in t]
 		tmp.append(test(inputs,hprev,hpost))
 		
 	out.write('\n'.join(tmp))
+
 

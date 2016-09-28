@@ -1,10 +1,14 @@
 from __future__ import division
+import sys
+
+N = sys.argv[1]
+trial = sys.argv[2]
 
 if __name__ == '__main__':
-    dt = open('sample.in', 'r').read().strip().split("\n")
+    dt = open('results/therotical_'+N+'.out', 'r').read().strip().split("\n")
     analytical = [x.split() for x in dt]
 
-    dt = open('sample.out', 'r').read().strip().split("\n")
+    dt = open('results/test_'+N+'_'+trial+'.out', 'r').read().strip().split("\n")
     model = [x.split() for x in dt]
 
     total = 0
