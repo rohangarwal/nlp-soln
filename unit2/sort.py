@@ -111,6 +111,7 @@ mbhb = np.zeros_like(bhb) # memory variables for Adagrad
 #smooth_loss = -np.log(1.0/vocab_size)*seq_length # loss at iteration 0
 hprev = np.zeros((hidden_size,1))
 hpost = np.zeros((hidden_size,1))
+loss_values = list()
 for n,mn in enumerate(data):
 
   inputs = [char_to_ix[ch] for ch in mn]
@@ -121,6 +122,7 @@ for n,mn in enumerate(data):
   # forward seq_length characters through the net and fetch gradient
   loss, dWxhf, dWhhf, dWhyf, dbhf, dby, hprev, dWxhb, dWhhb, dWhyb, dbhb, hpost = train(inputs, targets, hprev, hpost)
 
+  loss_values.append(loss)
   #smooth_loss = smooth_loss * 0.999 + loss * 0.001
   #if n % 2 == 0: print 'iter %d, loss: %f' % (n, smooth_loss) # print progress
 
@@ -131,6 +133,14 @@ for n,mn in enumerate(data):
                                 ):
     mem += dparam * dparam
     param += -learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
+
+
+'''
+average and max values of loss
+print("Average loss value = ", sum(loss_values)/len(loss_values))
+print("Maximum loss value = ", max(loss_values))
+print("Minimum loss values = ", min(loss_values))
+'''
 
 parameter_dict = {}
 parameter_dict['hprev'] = hprev
