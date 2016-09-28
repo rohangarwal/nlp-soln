@@ -1,0 +1,6 @@
+python create_data.py 1000000
+python sort.py 1000000
+python test_file1.py 1000000
+python test_file2.py 1000000
+python accuracy.py 1000000 1 
+python accuracy.py 1000000 2
