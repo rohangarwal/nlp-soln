@@ -19,7 +19,8 @@ for line in texts:
         final_line.append(''.join(ch for ch in string if ch not in exclude))
         
     final_line = ' '.join(i for i in final_line if not i.isdigit() and len(i) > 1)
-    final.append(''.join(final_line))
+    flist = final_line.split(" ")[:32]
+    final.append(" ".join(flist))
     
 with open("neg_sentences.txt", "w") as f:
     f.write("\n".join(final))
