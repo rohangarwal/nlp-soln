@@ -1,4 +1,4 @@
-import gensim, pickle
+import gensim, pickle, random
 
 if __name__ == "__main__":
 
@@ -8,12 +8,16 @@ if __name__ == "__main__":
 	all_neg_vecs = list()
 	with open(filename) as f:
 		lines = f.readlines()
-		for line in lines:
+		while(len(all_neg_vecs) != 1100):
+			line = lines[random.randint(0,len(lines))]
 			review_vec = list()
 			for word in line.strip().split():
 				if word in model.vocab:
 					review_vec.append(model[word])
 			all_neg_vecs.append(review_vec)
 
-	with open('neg_vec.pkl', 'wb') as f:
-		pickle.dump(all_neg_vecs,f)
+	with open('neg_vec_train.pkl', 'wb') as f:
+		pickle.dump(all_neg_vecs[:1000],f)
+
+	with open('neg_vec_test.pkl', 'wb') as f:
+		pickle.dump(all_neg_vecs[1000:],f)
