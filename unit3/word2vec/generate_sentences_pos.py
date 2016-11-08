@@ -6,7 +6,7 @@ from nltk.corpus import stopwords
 with open('../pos_amazon_cell_phone_reviews.json') as data_file:    
     data = json.load(data_file)
     
-documents = [x['summary']+" "+x['text'] for x in list(data['root'])]
+documents = [x['summary']+" "+x['summary']+" "+x['text'] for x in list(data['root'])]
 stoplist = set(stopwords.words('english'))
 texts = [[word for word in document.lower().split() if word not in stoplist] for document in documents]
 
