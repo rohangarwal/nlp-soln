@@ -90,7 +90,7 @@ if __name__ == '__main__':
         mem += dparam * dparam
         param += -learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
 
-'''
+  '''
   for review in negreviews:
     seq_length = len(review)
     smooth_loss = -np.log(1.0/vector_len)*seq_length # loss at iteration 0
@@ -106,7 +106,7 @@ if __name__ == '__main__':
                                   [mWxh, mWhh, mWhy, mbh, mby]):
       mem += dparam * dparam
       param += -learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
-'''
+  '''
 
   parameter_dict = {}
   parameter_dict['hprev'] = hprev
@@ -119,6 +119,3 @@ if __name__ == '__main__':
   fi = open("trained_model.pkl", "wb")
   pickle.dump(parameter_dict,fi)
   fi.close()
-
-
-
