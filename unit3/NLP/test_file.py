@@ -21,8 +21,14 @@ def test(review,hprev):
     return str(np.argmax(ps))
 
 if __name__ == "__main__":
+    '''
+    #test using word2vec
     posreviews = pickle.load(open('../word2vec/pos_vec_test.pkl',"rb"))
     negreviews = pickle.load(open('../word2vec/neg_vec_test.pkl',"rb"))
+    '''
+    #test using sir's implmn of word2vec
+    posreviews = pickle.load(open('../sir2vec/pos_vec_test.pkl',"rb"))
+    negreviews = pickle.load(open('../sir2vec/neg_vec_test.pkl',"rb"))
 
     parameter_dict = {}
     fp = open('trained_model.pkl','rb')
