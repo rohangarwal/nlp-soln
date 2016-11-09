@@ -58,8 +58,17 @@ def lossFun(review, target, hprev):
 
 
 if __name__ == '__main__':
+
+  '''
+  #RNN model trained using gensim.word2vec
   posreviews = pickle.load(open('../word2vec/pos_vec_train.pkl',"rb"))
   negreviews = pickle.load(open('../word2vec/neg_vec_train.pkl',"rb"))
+  all_reviews = zip(posreviews,negreviews)
+  '''
+
+  #RNN model trained using sir's implementaion of word2vec
+  posreviews = pickle.load(open('../sir2vec/pos_vec_train.pkl',"rb"))
+  negreviews = pickle.load(open('../sir2vec/neg_vec_train.pkl',"rb"))
   all_reviews = zip(posreviews,negreviews)
 
   # Initializing model parameters
