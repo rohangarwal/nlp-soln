@@ -8,7 +8,7 @@ vector_len = 32
 outputs = 2
 
 # model parameters
-Wxh = np.random.randn(hidden_size, 32)*0.01 # input to hidden
+Wxh = np.random.randn(hidden_size, vector_len)*0.01 # input to hidden
 Whh = np.random.randn(hidden_size, hidden_size)*0.01 # hidden to hidden
 Why = np.random.randn(outputs, hidden_size)*0.01 # hidden to output
 bh = np.zeros((hidden_size, 1)) # hidden bias
@@ -26,7 +26,9 @@ def lossFun(review, target, hprev):
 
   # forward pass
   for t in range(len(review)):
-    xs[t] = review[t]
+    xs[t] = np.zeros((vector_len,1)) # encode in 1-of-k representation
+    for j in range(32):
+      xs[t][j] = review[t][j]
     hs[t] = np.tanh(np.dot(Wxh, xs[t]) + np.dot(Whh, hs[t-1]) + bh) # hidden state
 
   #Many 2 one
@@ -39,24 +41,25 @@ def lossFun(review, target, hprev):
   dWxh, dWhh, dWhy = np.zeros_like(Wxh), np.zeros_like(Whh), np.zeros_like(Why)
   dbh, dby = np.zeros_like(bh), np.zeros_like(by)
   dhnext = np.zeros_like(hs[0])
-  dy= [a - b for a, b in zip(ps, target)] # backprop into y. see http://cs231n.github.io/neural-networks-case-study/#grad if confused here
-  dWhy += np.dot(dy, hs[t-1].T)
+
+  dy = np.subtract(ps,target) # backprop into y. see http://cs231n.github.io/neural-networks-case-study/#grad if confused here
+  dWhy += np.dot(dy, hs[last].T)
   dby += dy
+  dh = np.dot(Why.T, dy) + dhnext # backprop into h
   for t in reversed(range(len(review))):
-    dh = np.dot(Why.T, dy) + dhnext # backprop into h
-    dhraw = (1 - hs[t] * hs[t]) * dh # backprop through tanh nonlinearity
+    dhraw = (1 - (hs[t] * hs[t].T)) * dh # backprop through tanh nonlinearity
     dbh += dhraw
     dWxh += np.dot(dhraw, xs[t].T)
     dWhh += np.dot(dhraw, hs[t-1].T)
     dhnext = np.dot(Whh.T, dhraw)
   for dparam in [dWxh, dWhh, dWhy, dbh, dby]:
     np.clip(dparam, -5, 5, out=dparam) # clip to mitigate exploding gradients
-  return loss, dWxh, dWhh, dWhy, dbh, dby, hs[len(inputs)-1]
+  return loss, dWxh, dWhh, dWhy, dbh, dby, hs[last]
 
 
 if __name__ == '__main__':
-  posreviews = pickle.load(open('posreviews.p',"rb"))
-  negreviews = pickle.load(open('negreviews.p',"rb"))
+  posreviews = pickle.load(open('../word2vec/pos_vec_train.pkl',"rb"))
+  negreviews = pickle.load(open('../word2vec/neg_vec_train.pkl',"rb"))
 
   # Initializing model parameters
   mWxh, mWhh, mWhy = np.zeros_like(Wxh), np.zeros_like(Whh), np.zeros_like(Why)
@@ -66,7 +69,7 @@ if __name__ == '__main__':
   for review in posreviews:
     seq_length = len(review)
     smooth_loss = -np.log(1.0/vector_len)*seq_length # loss at iteration 0
-    target = [1,0]
+    target = np.matrix('1;0')
 
     # forward seq_length characters through the net and fetch gradient
     loss, dWxh, dWhh, dWhy, dbh, dby, hprev = lossFun(review, target, hprev)
@@ -82,7 +85,7 @@ if __name__ == '__main__':
   for review in negreviews:
     seq_length = len(review)
     smooth_loss = -np.log(1.0/vector_len)*seq_length # loss at iteration 0
-    target = [0,1]
+    target = np.matrix('0;1')
 
     # forward seq_length characters through the net and fetch gradient
     loss, dWxh, dWhh, dWhy, dbh, dby, hprev = lossFun(review, target, hprev)
