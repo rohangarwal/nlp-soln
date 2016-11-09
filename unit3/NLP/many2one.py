@@ -60,28 +60,37 @@ def lossFun(review, target, hprev):
 if __name__ == '__main__':
   posreviews = pickle.load(open('../word2vec/pos_vec_train.pkl',"rb"))
   negreviews = pickle.load(open('../word2vec/neg_vec_train.pkl',"rb"))
+  all_reviews = zip(posreviews,negreviews)
 
   # Initializing model parameters
   mWxh, mWhh, mWhy = np.zeros_like(Wxh), np.zeros_like(Whh), np.zeros_like(Why)
   mbh, mby = np.zeros_like(bh), np.zeros_like(by)
   hprev = np.zeros((hidden_size,1))
 
-  for review in posreviews:
-    seq_length = len(review)
-    smooth_loss = -np.log(1.0/vector_len)*seq_length # loss at iteration 0
-    target = np.matrix('1;0')
+  for reviews in all_reviews:
+    for t in range(2):
+      if(t == 0):
+        target = np.matrix('1;0')
+      else:
+        target = np.matrix('0;1')
 
-    # forward seq_length characters through the net and fetch gradient
-    loss, dWxh, dWhh, dWhy, dbh, dby, hprev = lossFun(review, target, hprev)
-    smooth_loss = smooth_loss * 0.999 + loss * 0.001
+      review = reviews[t]
+      seq_length = len(review)
+      smooth_loss = -np.log(1.0/vector_len)*seq_length # loss at iteration 0
 
-    # perform parameter update with Adagrad
-    for param, dparam, mem in zip([Wxh, Whh, Why, bh, by],
-                                  [dWxh, dWhh, dWhy, dbh, dby],
-                                  [mWxh, mWhh, mWhy, mbh, mby]):
-      mem += dparam * dparam
-      param += -learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
 
+      # forward seq_length characters through the net and fetch gradient
+      loss, dWxh, dWhh, dWhy, dbh, dby, hprev = lossFun(review, target, hprev)
+      smooth_loss = smooth_loss * 0.999 + loss * 0.001
+
+      # perform parameter update with Adagrad
+      for param, dparam, mem in zip([Wxh, Whh, Why, bh, by],
+                                    [dWxh, dWhh, dWhy, dbh, dby],
+                                    [mWxh, mWhh, mWhy, mbh, mby]):
+        mem += dparam * dparam
+        param += -learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
+
+'''
   for review in negreviews:
     seq_length = len(review)
     smooth_loss = -np.log(1.0/vector_len)*seq_length # loss at iteration 0
@@ -97,6 +106,7 @@ if __name__ == '__main__':
                                   [mWxh, mWhh, mWhy, mbh, mby]):
       mem += dparam * dparam
       param += -learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
+'''
 
   parameter_dict = {}
   parameter_dict['hprev'] = hprev
