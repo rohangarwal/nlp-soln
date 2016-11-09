@@ -17,7 +17,7 @@ def test(review,hprev):
     hs = fwd(review,hprev)
     ys = np.dot(Why, hs) + by
     ps = np.exp(ys) / np.sum(np.exp(ys))
-    print ps
+    #print ps
     return str(np.argmax(ps))
 
 if __name__ == "__main__":
@@ -34,5 +34,25 @@ if __name__ == "__main__":
     Whh = parameter_dict['Whh']
     bh = parameter_dict['bh']
     fp.close()
+
+    TN = 0
+    FN = 0
+    TP = 0
+    FP = 0
     for review in negreviews:
-        print test(review,hprev)
+        if test(review,hprev) == str(0):
+            FP += 1
+        else:
+            TN += 1
+
+    for review in posreviews:
+        if test(review,hprev) == str(0):
+            TP += 1
+        else:
+            FN += 1
+
+    #print "TP = " + str(TP) + "FN = " + str(FN) + "TN = " + str(TN) + "FP = " + str(FP)
+    values = list()
+    values = [TP,FN,TN,FP]
+    with open('test_values.pkl', 'wb') as f:
+        pickle.dump(values,f)
