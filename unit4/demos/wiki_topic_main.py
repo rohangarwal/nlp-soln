@@ -4,12 +4,12 @@ Created on 23-Jul-2016
 @author: Anantharaman
 '''
 import sys
-sys.path.append('/home/sai/Desktop/nlp/nlp-soln/sample')
+sys.path.append('/home/sai/Desktop/nlp/nlp-soln/unit4')
 from feature_function_wiki_topics import WikiFeatureFunctions
 from classifiers.maxent_base import LogLinear
 import os
 
-ds_path = os.path.join("..", "data", "datasets", "wiki_pages")
+ds_path = os.path.join("..", "data")
 
 def get_wiki_file_names():
     fnames_1 = os.listdir(ds_path)
@@ -24,6 +24,7 @@ def prepare_dataset(supported_labels):
         label = fn1.split("_")[1] # our convention is that the filename will be name_label
         if label in supported_labels:
             txt = open(fn).read()
+            txt = txt[:20]
             dataset.append([txt, label])
     return dataset
 

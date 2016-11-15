@@ -93,6 +93,7 @@ class WikiFeatureFunctions(FeatureFunctionsBase):
                     tag = k[1:].split("_")[0]
                     val = self.fdict.get(tag, [])
                     val.append(v)
+                    print ("v : " + str(v) + "  val : " + str(val))
                     self.fdict[tag] = val
         self.supported_tags = self.fdict.keys()        
         return
