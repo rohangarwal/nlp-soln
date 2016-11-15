@@ -37,7 +37,7 @@ def Chunking(t):
         Chunking is grouping tagged words as phrases
     '''
     # Tag pattern to identify dishes
-    pattern = '''Senti : {<NNS>|<VB.*>|<JJ.*>}'''
+    pattern = '''Senti : {<VB.*>|<JJ.*>}'''
 
     chunk_rule = nltk.RegexpParser(pattern)
     tree = chunk_rule.parse(t)
@@ -83,6 +83,8 @@ if __name__ == '__main__':
     dic['compliment'] = comp
     dic['miscellaneous'] = mice
     dic['displeasure'] = disp
+
+    print dic['displeasure']
 
     file2 = open('pickles/featurewords.pkl','wb')
     pickle.dump(dic, file2)
