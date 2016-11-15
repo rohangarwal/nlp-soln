@@ -132,7 +132,7 @@ class LogLinear(object):
             if val >= maxval:
                 maxval = val
                 result = t
-        return result
+        return result, probs
 
     #-------------- COST FUNCTION required for the train procedure ---------------
     def cost(self, params):
