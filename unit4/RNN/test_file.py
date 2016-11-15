@@ -65,7 +65,8 @@ if __name__ == "__main__":
 	    		corr += 1
 	    	else:
 	    		wrong += 1
-
-	    print "Bank = ", fname, "num_comp = ", num_comp, "num_disp = ", num_disp, "num_misc = ", num_misc, "correct = ", corr, "wrong = ", wrong, (float(corr)/(corr+wrong))*100
-	    print "Performance-disp = ", float(num_disp)/len(datapkl[:500])
+	    		
+	    print "*"*10, fname, "*"*10
+	    print "% of Displeasure :",float(num_disp)/len(datapkl[:500]), ", % of Misc :", float(num_misc)/len(datapkl[:500]), ", % of Compliment :", float(num_comp)/len(datapkl[:500])
+	    print "Accuracy =", (float(corr)/(corr+wrong))*100
 	    print "**************************************"
