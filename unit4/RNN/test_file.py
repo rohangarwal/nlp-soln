@@ -35,6 +35,7 @@ if __name__ == "__main__":
     negreviews = pickle.load(open('../word2vec/neg_vec_test.pkl',"rb"))
     '''
     dirname = '../pickles/files/'
+    ranks = dict()
     for fname in os.listdir(dirname):
 	    datapkl = pickle.load(open(os.path.join(dirname, fname),"rb"))
 
@@ -70,3 +71,7 @@ if __name__ == "__main__":
 	    print "% of Displeasure :",float(num_disp)/len(datapkl[:500]), ", % of Misc :", float(num_misc)/len(datapkl[:500]), ", % of Compliment :", float(num_comp)/len(datapkl[:500])
 	    print "Accuracy =", (float(corr)/(corr+wrong))*100
 	    print "**************************************"
+	    ranks[fname.split(".")[0]] = float(num_disp)/len(datapkl[:500])
+
+    for w in sorted(ranks, key=ranks.get, reverse=True):
+        print w.split("_")[-1], ": Displeasure =", ranks[w]*100, "%"
