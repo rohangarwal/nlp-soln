@@ -4,7 +4,7 @@ Created on 23-Jul-2016
 @author: Anantharaman
 '''
 import sys
-sys.path.append('/Work/Git/nlp-soln/unit4/MaxEnt')
+sys.path.append('/home/ksameersrk/Documents/nlp-soln/unit4/MaxEnt')
 from feature_function_tweets import WikiFeatureFunctions
 from classifiers.maxent_base import LogLinear
 import os

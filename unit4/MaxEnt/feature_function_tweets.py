@@ -9,7 +9,7 @@ e.g. fsports_1(x, y)
 '''
 import sys
 import pickle
-sys.path.append('/Work/Git/nlp-soln/unit4/MaxEnt')
+sys.path.append('/home/ksameersrk/Documents/nlp-soln/unit4/MaxEnt')
 from nltk import sent_tokenize, word_tokenize
 from classifiers.feature_functions_base import FeatureFunctionsBase
 
