@@ -28,7 +28,7 @@ class WikiFeatureFunctions(FeatureFunctionsBase):
                     val.append(v)
                     self.fdict[tag] = val
         self.supported_tags = self.fdict.keys()
-        feature_vec = pickle.load(open("../pickles/featurewords.pkl" , "rb"))
+        feature_vec = pickle.load(open("../pickles/featurewords2.pkl" , "rb"))
         for i,j in feature_vec.items():
             if i == "displeasure":
                 self.disp = list(j)
@@ -37,7 +37,6 @@ class WikiFeatureFunctions(FeatureFunctionsBase):
 
             else :
                 self.misc = list(j)
-        print self.disp
         return
 
     def check_membership(self, ref_set, my_set):
@@ -57,12 +56,14 @@ class WikiFeatureFunctions(FeatureFunctionsBase):
     def fcompliment_1(self, words, y):
         comp = self.comp
         if (self.check_membership(comp, words)) and (y == "compliment"):
+            print 'compliment'
             return 1
         return 0
 
     def fdispleasure_1(self, words, y):
         disp = self.disp
         if (self.check_membership(disp, words)) and (y == "displeasure"):
+            print 'displeasure'
             return 1
         return 0
 
