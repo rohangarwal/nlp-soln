@@ -16,6 +16,7 @@ import requests
 import json
 import random
 import pickle
+import os
 
 serviceURL = "http://www.jnresearchlabs.com:9027/" # NOTE: we will get rid of port number later!
 runCommandURL = serviceURL + "run_command" # this is the end point to which we will POST the command and params
@@ -35,49 +36,11 @@ if __name__ == '__main__':
 	for fname in os.listdir(dirname):
 		if 'test' in fname:
 			data = pickle.load(open(os.path.join(dirname, fname),'rb'))
-			all_tweet_vec = list()
+			tweet_vec = list()
 			for line in data:
-				tweet_vec.append(get_vec_for_words(line[0]))
+				tweet_vec.append([get_vec_for_words(line[0]),line[1]])
 				
 			filename = add + fname
 			with open(os.path.join(dirname2, filename), 'wb') as f:
-				pickle.dump(all_tweet_vec,f)
-				
-				
-				
-		data = pickle.load(open(fname,'rb'))
-		all_tweet_vec = list()
-		
-		for line in data:
-			tweet_vec = list()
-			for word in line[0].split():
-				if word in model.vocab:
-					tweet_vec.append(model[word])
-			all_tweet_vec.append([tweet_vec, line[1]])
-			
-		with open('tweet_vec_test_SBI.pkl', 'wb') as f:
-			pickle.dump(all_tweet_vec, f)
+				pickle.dump(tweet_vec,f)
 
-    filename = '../pickles/train.pkl'
-    datapkl = pickle.load(open(filename,'rb'))
-    sentences = list()
-    for i in datapkl:
-		sentences.append([word for word in i[0].split()])
-
-	all_vecs = list()
-	for tweet in sentences:
-		all_vecs.append(get_vec_for_words(tweet))
-		
-    with open(filename) as f:
-        lines = f.readlines()
-        while(len(all_neg_vecs) != 1100):
-            line = lines[random.randint(0,len(lines))]
-            result = get_vec_for_words(line.split())['reps']
-            all_neg_vecs.append(result)
-            print(len(all_neg_vecs))
-
-	with open('pos_vec_train.pkl', 'wb') as f:
-		pickle.dump(all_neg_vecs[:1000],f)
-
-	with open('pos_vec_test.pkl', 'wb') as f:
-		pickle.dump(all_neg_vecs[1000:],f)
