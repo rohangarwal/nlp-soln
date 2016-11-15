@@ -1,6 +1,7 @@
 import pickle
 import numpy as np
 from random import shuffle
+import os
 
 def fwd(review,hprev):
     vector_length = 32
@@ -33,27 +34,38 @@ if __name__ == "__main__":
     posreviews = pickle.load(open('../word2vec/pos_vec_test.pkl',"rb"))
     negreviews = pickle.load(open('../word2vec/neg_vec_test.pkl',"rb"))
     '''
-    datapkl = pickle.load(open('../word2vec/tweet_vec_test_SBI.pkl',"rb"))
+    dirname = '../pickles/files/'
+    for fname in os.listdir(dirname):
+	    datapkl = pickle.load(open(os.path.join(dirname, fname),"rb"))
 
-    parameter_dict = {}
-    fp = open('trained_model.pkl','rb')
-    parameter_dict = pickle.load(fp)
-    hprev = parameter_dict['hprev']
-    Why = parameter_dict['Why']
-    by = parameter_dict['by']
-    Wxh = parameter_dict['Wxh']
-    Whh = parameter_dict['Whh']
-    bh = parameter_dict['bh']
-    fp.close()
+	    parameter_dict = {}
+	    fp = open('trained_model.pkl','rb')
+	    parameter_dict = pickle.load(fp)
+	    hprev = parameter_dict['hprev']
+	    Why = parameter_dict['Why']
+	    by = parameter_dict['by']
+	    Wxh = parameter_dict['Wxh']
+	    Whh = parameter_dict['Whh']
+	    bh = parameter_dict['bh']
+	    fp.close()
 
-    shuffle(datapkl)
-    corr = 0
-    wrong = 0
-    for i in datapkl[:500]:
-    	if test(i[0],hprev) == i[1]:
-    		corr += 1
-    	else:
-    		wrong += 1
+	    shuffle(datapkl)
+	    corr = 0
+	    wrong = 0
+	    num_comp, num_disp, num_misc = 0,0,0
+	    for i in datapkl[:500]:
+	    	res = test(i[0],hprev)
+	    	if res == "compliment":
+	    		num_comp += 1
+	    	if res == "displeasure":
+	    		num_disp += 1
+	    	if res == "miscellaneous":
+	    		num_misc += 1
+	    	if res == i[1]:
+	    		corr += 1
+	    	else:
+	    		wrong += 1
 
-    print corr,wrong
-    print (float(corr)/(corr+wrong))*100
+	    print "Bank = ", fname, "num_comp = ", num_comp, "num_disp = ", num_disp, "num_misc = ", num_misc, "correct = ", corr, "wrong = ", wrong, (float(corr)/(corr+wrong))*100
+	    print "Performance-disp = ", float(num_disp)/len(datapkl[:500])
+	    print "**************************************"
