@@ -30,10 +30,10 @@ class WikiFeatureFunctions(FeatureFunctionsBase):
         self.supported_tags = self.fdict.keys()  
         feature_vec = pickle.load(open("../pickles/featurewords.pkl" , "rb"))
         for i,j in feature_vec.items():
-            if i == "compliment":
-                self.comp = list(j)
-            elif i == "displeasure"    :
+            if i == "displeasure":
                 self.disp = list(j)
+            elif i == "compliment"    :
+                self.comp = list(j)
 
             else :
                 self.misc = list(j) 
