@@ -3,6 +3,7 @@ Created on 23-Jul-2016
 
 @author: Anantharaman
 '''
+from __future__ import division
 import sys
 import pickle
 sys.path.append('/home/Work/Git/nlp-soln/unit4/MaxEnt')
@@ -38,9 +39,10 @@ if __name__ == '__main__':
     clf.train(dataset, max_iter=50)
 
     #Testing
-    file = open('../pickles/test_HDFC.pkl','rb')
+    file = open('../pickles/test_SBI.pkl','rb')
     dic = pickle.load(file)
     correct = 0
+    displease = 0
     total = len(dic)
 
     for ls in dic:
@@ -58,4 +60,7 @@ if __name__ == '__main__':
         key = max(tmp, key=tmp.get)
         if key == ls[1]:
             correct += 1
-    print correct, total
+        if key == 'displeasure':
+            displease += 1
+    print 'Displeasure - ',(displease/total)*100
+    print 'Accuracy - ',(correct/total)*100
