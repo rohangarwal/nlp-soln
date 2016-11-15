@@ -37,7 +37,7 @@ def Chunking(t):
         Chunking is grouping tagged words as phrases
     '''
     # Tag pattern to identify dishes
-    pattern = '''Senti : {<NNS>|<VB.*>|<JJ.*>}'''
+    pattern = '''Senti : {<NN.*>|<VB.*>|<JJ.*>}'''
 
     chunk_rule = nltk.RegexpParser(pattern)
     tree = chunk_rule.parse(t)
