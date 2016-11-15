@@ -40,15 +40,16 @@ for line in lines:
     line = ' '.join(words)
     text = filter_out(line.split(",")[0]).strip()
     sentiment = line.split(",")[1]
-    tweet = [text, sentiment]
-    train.append(tweet)
-    for tag in tags:
-        if tag in tag_keys:
-            name = tag_to_name[tag]
-            if name in test.keys():
-                test[name].append(tweet)
-            else:
-                test[name] = [tweet]
+    if text:
+        tweet = [text, sentiment]
+        train.append(tweet)
+        for tag in tags:
+            if tag in tag_keys:
+                name = tag_to_name[tag]
+                if name in test.keys():
+                    test[name].append(tweet)
+                else:
+                    test[name] = [tweet]
         
 with open("pickles/train.pkl", "wb") as f:
     pickle.dump(train, f)

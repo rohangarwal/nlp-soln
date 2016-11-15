@@ -595,1763 +595,1758 @@ p344
 aS'displeasure'
 p345
 aa(lp346
-S''
+S'naveen rao team fine job linking road branch'
 p347
-aS'miscellaneous'
+aS'compliment'
 p348
 aa(lp349
-S'naveen rao team fine job linking road branch'
+S'payment due kotak c card paid cash using old denomination notes juhu br unaware unable pay'
 p350
-aS'compliment'
+aS'miscellaneous'
 p351
 aa(lp352
-S'payment due kotak c card paid cash using old denomination notes juhu br unaware unable pay'
+S'very good customer service atkotak alkapuri branch barodagujarati congratulate team branch head this'
 p353
-aS'miscellaneous'
+aS'compliment'
 p354
 aa(lp355
-S'very good customer service atkotak alkapuri branch barodagujarati congratulate team branch head this'
+S'theofficialsbi'
 p356
-aS'compliment'
+aS'miscellaneous'
 p357
 aa(lp358
-S'theofficialsbi'
+S'rt sagard kotakmahindra atms also become functional bhubaneswar some atms also working now o'
 p359
-aS'miscellaneous'
+aS'compliment'
 p360
 aa(lp361
-S'rt sagard kotakmahindra atms also become functional bhubaneswar some atms also working now o'
+S'sad see attitude kotak bank officials what common man do'
 p362
-aS'compliment'
+aS'displeasure'
 p363
 aa(lp364
-S'sad see attitude kotak bank officials what common man do'
+S'waiting last  hour now completely different experience take new loan vs service post that'
 p365
-aS'displeasure'
+aS'miscellaneous'
 p366
 aa(lp367
-S'waiting last  hour now completely different experience take new loan vs service post that'
+S'addressed'
 p368
 aS'miscellaneous'
 p369
 aa(lp370
-S'addressed'
+S'we heard thing side issue'
 p371
 aS'miscellaneous'
 p372
 aa(lp373
-S'we heard thing side issue'
-p374
-aS'miscellaneous'
-p375
-aa(lp376
 S'wtf  deducted kotakbankltd'
-p377
+p374
 aS'displeasure'
-p378
-aag376
-a(lp379
+p375
+aag373
+a(lp376
 S'unable todo online neft today nov even officially declared working day neft rtgs working fine'
-p380
+p377
 aS'miscellaneous'
-p381
-aa(lp382
+p378
+aa(lp379
 S'u wanted fix disruptions u ppl hv made atm working but ur atm doesnt works all'
+p380
+aS'displeasure'
+p381
+aag379
+a(lp382
+S'got deducted account using kotak atm month aug onlyits nt fking small amt ignored'
 p383
 aS'displeasure'
 p384
-aag382
-a(lp385
-S'got deducted account using kotak atm month aug onlyits nt fking small amt ignored'
+aa(lp385
+S'close banking service pathetic service ever seen'
 p386
 aS'displeasure'
 p387
 aa(lp388
-S'close banking service pathetic service ever seen'
+S'what kinda sham guys running scamming consumers even bothering provide basic level service'
 p389
 aS'displeasure'
 p390
 aa(lp391
-S'what kinda sham guys running scamming consumers even bothering provide basic level service'
+S'useless call customer service atmost raise service request promise call back'
 p392
 aS'displeasure'
 p393
 aa(lp394
-S'useless call customer service atmost raise service request promise call back'
+S'please ensure problem solved the service offered bank highly deplorable'
 p395
 aS'displeasure'
 p396
 aa(lp397
-S'please ensure problem solved the service offered bank highly deplorable'
+S'atms still functional people suppose need cash httpstcovsfugaqm'
 p398
 aS'displeasure'
 p399
-aa(lp400
-S'atms still functional people suppose need cash httpstcovsfugaqm'
-p401
-aS'displeasure'
-p402
-aag400
-a(lp403
+aag397
+a(lp400
 S'didnt u itkotak'
-p404
+p401
 aS'miscellaneous'
-p405
-aa(lp406
+p402
+aa(lp403
 S'looking relevant answer people taken lot time fr providing solution unfortunately dont'
+p404
+aS'displeasure'
+p405
+aag403
+a(lp406
+S'sir its open since  days'
 p407
 aS'displeasure'
 p408
-aag406
-a(lp409
-S'sir its open since  days'
+aa(lp409
+S'days  enough banks replenish atms i money lying account i still cant use it'
 p410
 aS'displeasure'
 p411
 aa(lp412
-S'days  enough banks replenish atms i money lying account i still cant use it'
+S'atm working andheri east ghatkopar now pmoindia'
 p413
 aS'displeasure'
 p414
 aa(lp415
-S'atm working andheri east ghatkopar now pmoindia'
+S'mobile app keeps crashing moto g phone trouble i cant transact'
 p416
 aS'displeasure'
 p417
 aa(lp418
-S'mobile app keeps crashing moto g phone trouble i cant transact'
+S'they asked kotak account and no the aim p httpstcokjrrfbdqia'
 p419
 aS'displeasure'
 p420
 aa(lp421
-S'they asked kotak account and no the aim p httpstcokjrrfbdqia'
+S'kotakbankltd why r u charging rs  every nonkotak atm withdrawal already complained reply terrible customerservice'
 p422
 aS'displeasure'
 p423
 aa(lp424
-S'kotakbankltd why r u charging rs  every nonkotak atm withdrawal already complained reply terrible customerservice'
+S'poor service kotak bank allahabad number'
 p425
-aS'displeasure'
+aS'miscellaneous'
 p426
 aa(lp427
-S'poor service kotak bank allahabad number'
+S'kotak bank giviing good service ysbank hdfc n icici closed atm httpstcomvlyqsavb'
 p428
 aS'miscellaneous'
 p429
 aa(lp430
-S'kotak bank giviing good service ysbank hdfc n icici closed atm httpstcomvlyqsavb'
+S'rt norafatehi soo upset bank ive loyal customer shit hits fan behave like headless chick'
 p431
-aS'miscellaneous'
+aS'displeasure'
 p432
 aa(lp433
-S'rt norafatehi soo upset bank ive loyal customer shit hits fan behave like headless chick'
+S'lazy worker bank'
 p434
 aS'displeasure'
 p435
 aa(lp436
-S'lazy worker bank'
-p437
-aS'displeasure'
-p438
-aa(lp439
 S'can u help get dm of ghatkopar east branch ft road mumbai rbi'
+p437
+aS'miscellaneous'
+p438
+aag436
+a(lp439
+S'rs  debited salary account without smsemail update yesterday annual fee debit card'
 p440
 aS'miscellaneous'
 p441
-aag439
-a(lp442
-S'rs  debited salary account without smsemail update yesterday annual fee debit card'
+aa(lp442
+S'please get touch providing best service'
 p443
 aS'miscellaneous'
 p444
 aa(lp445
-S'please get touch providing best service'
+S'atms functionsl now'
 p446
 aS'miscellaneous'
 p447
 aa(lp448
-S'atms functionsl now'
+S'branch jmd gurgoan contact no also registered bank account  ac'
 p449
 aS'miscellaneous'
 p450
 aa(lp451
-S'branch jmd gurgoan contact no also registered bank account  ac'
+S'expect frm banks httpstcodsppuiy'
 p452
 aS'miscellaneous'
 p453
 aa(lp454
-S'expect frm banks httpstcodsppuiy'
+S'closing accounts kotak you people biggest thieves market'
 p455
-aS'miscellaneous'
+aS'displeasure'
 p456
 aa(lp457
-S'closing accounts kotak you people biggest thieves market'
+S'kotakbankltd why people stop taking requests hbcash delivery any idea itll resumed'
 p458
-aS'displeasure'
+aS'miscellaneous'
 p459
 aa(lp460
-S'kotakbankltd why people stop taking requests hbcash delivery any idea itll resumed'
+S'visited atms amp service helped q m'
 p461
 aS'miscellaneous'
 p462
 aa(lp463
-S'visited atms amp service helped q m'
+S'no cash avail amp indian bank shld suffice cash atleast exchange'
 p464
-aS'miscellaneous'
+aS'displeasure'
 p465
 aa(lp466
-S'no cash avail amp indian bank shld suffice cash atleast exchange'
+S'not ur branch saw banks  pin code marked u i seen u r responsive twit httpstcoemtkuynq'
 p467
-aS'displeasure'
+aS'miscellaneous'
 p468
 aa(lp469
-S'not ur branch saw banks  pin code marked u i seen u r responsive twit httpstcoemtkuynq'
+S'rt dryashsonawane thank u efficient system handling currency exchange situation'
 p470
-aS'miscellaneous'
+aS'compliment'
 p471
 aa(lp472
-S'rt dryashsonawane thank u efficient system handling currency exchange situation'
+S'poor gal  kotak bank plz help'
 p473
-aS'compliment'
+aS'miscellaneous'
 p474
 aa(lp475
-S'poor gal  kotak bank plz help'
+S'atm dry till even though suppose operational per rbi konakonakotak httpstcofvuvlis'
 p476
-aS'miscellaneous'
+aS'displeasure'
 p477
 aa(lp478
-S'atm dry till even though suppose operational per rbi konakonakotak httpstcofvuvlis'
+S'bangalore mg road'
 p479
-aS'displeasure'
+aS'miscellaneous'
 p480
 aa(lp481
-S'bangalore mg road'
+S'since yesterday getting messages banks made arrangements nomoney  contd'
 p482
-aS'miscellaneous'
+aS'displeasure'
 p483
 aa(lp484
-S'since yesterday getting messages banks made arrangements nomoney  contd'
+S'today i get sms saying depositing  lakh call make aappointments im going close account instead'
 p485
 aS'displeasure'
 p486
 aa(lp487
-S'today i get sms saying depositing  lakh call make aappointments im going close account instead'
+S'didnt even mind respond'
 p488
 aS'displeasure'
 p489
 aa(lp490
-S'didnt even mind respond'
+S'branch gets exchange quick  let know'
 p491
-aS'displeasure'
+aS'miscellaneous'
 p492
 aa(lp493
-S'branch gets exchange quick  let know'
+S'banks issuing token people standing long queues why banks want people stand queues smoothen process'
 p494
-aS'miscellaneous'
+aS'displeasure'
 p495
 aa(lp496
-S'banks issuing token people standing long queues why banks want people stand queues smoothen process'
+S'still working case detail updation ur side'
 p497
 aS'displeasure'
 p498
 aa(lp499
-S'still working case detail updation ur side'
+S'pls help kotak mahindra bank rbicentral gov order amp cheating public kotak httpstconjweinjkl'
 p500
 aS'displeasure'
 p501
-aa(lp502
-S'pls help kotak mahindra bank rbicentral gov order amp cheating public kotak httpstconjweinjkl'
-p503
-aS'displeasure'
-p504
-aag502
-a(lp505
+aag499
+a(lp502
 S'thank much resolving issue special thanks sandeep kumar singh neft pan india'
-p506
+p503
 aS'compliment'
+p504
+aa(lp505
+S'to  didnt receive mail neither registered mail act'
+p506
+aS'displeasure'
 p507
 aa(lp508
-S'to  didnt receive mail neither registered mail act'
+S'new service request dated today complaint done th to hide inefficiencies show better resolution time'
 p509
 aS'displeasure'
 p510
 aa(lp511
-S'new service request dated today complaint done th to hide inefficiencies show better resolution time'
+S'branch caused inconvenience'
 p512
 aS'displeasure'
 p513
 aa(lp514
-S'branch caused inconvenience'
-p515
-aS'displeasure'
-p516
-aa(lp517
 S'kudos u superbly managed queless experience depositing money  bandra day'
-p518
+p515
 aS'compliment'
-p519
-aag517
-a(lp520
+p516
+aag514
+a(lp517
 S'shameful see whole management trying hide mistake one officer suppress issue'
-p521
+p518
 aS'displeasure'
+p519
+aa(lp520
+S'thanks lets hope speeds up'
+p521
+aS'compliment'
 p522
 aa(lp523
-S'thanks lets hope speeds up'
+S'requires original photocopy id cash deposit ur account'
 p524
-aS'compliment'
+aS'miscellaneous'
 p525
 aa(lp526
-S'requires original photocopy id cash deposit ur account'
+S'kotak branch ft rd kanpur  cash withdrawal hows possible how'
 p527
-aS'miscellaneous'
+aS'displeasure'
 p528
 aa(lp529
-S'kotak branch ft rd kanpur  cash withdrawal hows possible how'
+S'any even going take cognizance not pathetic handling'
 p530
 aS'displeasure'
 p531
 aa(lp532
-S'any even going take cognizance not pathetic handling'
+S'im fat big balance amp gt privy league batch bank bt sadly executive work like r big favor'
 p533
 aS'displeasure'
 p534
 aa(lp535
-S'im fat big balance amp gt privy league batch bank bt sadly executive work like r big favor'
+S'thanks support yesterday kotak branch exchanged my  denomination note'
 p536
-aS'displeasure'
+aS'compliment'
 p537
 aa(lp538
-S'thanks support yesterday kotak branch exchanged my  denomination note'
+S'okay thats depositing blackmoney kotakbankltd'
 p539
-aS'compliment'
+aS'displeasure'
 p540
 aa(lp541
-S'okay thats depositing blackmoney kotakbankltd'
+S'the team of kotak mahendra bank thane khopat are doing great job by managing the public in exchanging money'
 p542
-aS'displeasure'
+aS'compliment'
 p543
 aa(lp544
-S'the team of kotak mahendra bank thane khopat are doing great job by managing the public in exchanging money'
+S'why kotak app working'
 p545
-aS'compliment'
+aS'miscellaneous'
 p546
 aa(lp547
-S'why kotak app working'
+S'that norm  worst customer care'
 p548
-aS'miscellaneous'
+aS'displeasure'
 p549
 aa(lp550
-S'that norm  worst customer care'
+S'hiccups yesterday  amazing fast service kotak napeansea road branch'
 p551
-aS'displeasure'
+aS'compliment'
 p552
 aa(lp553
-S'hiccups yesterday  amazing fast service kotak napeansea road branch'
+S'bank takes much time respond'
 p554
-aS'compliment'
+aS'displeasure'
 p555
 aa(lp556
-S'bank takes much time respond'
+S'kalyan west maharastra i branch somebody fighting staff trying exchange'
 p557
-aS'displeasure'
+aS'miscellaneous'
 p558
 aa(lp559
-S'kalyan west maharastra i branch somebody fighting staff trying exchange'
+S'make bank holiday monday deposit accepted day branches will help smoothen things tuesday'
 p560
 aS'miscellaneous'
 p561
 aa(lp562
-S'make bank holiday monday deposit accepted day branches will help smoothen things tuesday'
+S'branch noida sec  pin code  contact'
 p563
 aS'miscellaneous'
 p564
 aa(lp565
-S'branch noida sec  pin code  contact'
-p566
-aS'miscellaneous'
-p567
-aa(lp568
 S'hi i think its morning  still call prioritythis way prioritize ur customers'
-p569
+p566
 aS'displeasure'
+p567
+aag565
+a(lp568
+S'wt happened idiwali iphone offer top spenders where list winners'
+p569
+aS'miscellaneous'
 p570
 aag568
 a(lp571
-S'wt happened idiwali iphone offer top spenders where list winners'
-p572
-aS'miscellaneous'
-p573
-aag571
-a(lp574
 S'having incredibly hard time contacting customer care had open twitter account issue resolved'
-p575
+p572
 aS'displeasure'
+p573
+aa(lp574
+S'met many seemed like life saving old illiterate httpstcohffvlj'
+p575
+aS'miscellaneous'
 p576
 aa(lp577
-S'met many seemed like life saving old illiterate httpstcohffvlj'
+S'telling distribution start pm'
 p578
-aS'miscellaneous'
+aS'displeasure'
 p579
 aa(lp580
-S'telling distribution start pm'
+S'plz consider dis'
 p581
 aS'displeasure'
 p582
 aa(lp583
-S'plz consider dis'
+S'please let know happened httpstcojbprwmkzhx'
 p584
 aS'displeasure'
 p585
 aa(lp586
-S'please let know happened httpstcojbprwmkzhx'
+S'dont ever go cheating looting banks making food consumers looting using debit cards'
 p587
 aS'displeasure'
 p588
 aa(lp589
-S'dont ever go cheating looting banks making food consumers looting using debit cards'
+S'current train ticket reservation failed poor servicewhy asking  times confirmation single transaction'
 p590
 aS'displeasure'
 p591
 aa(lp592
-S'current train ticket reservation failed poor servicewhy asking  times confirmation single transaction'
+S'denying voter id card proof identity exchanging currency kindly help thanks advance'
 p593
-aS'displeasure'
+aS'miscellaneous'
 p594
 aa(lp595
-S'denying voter id card proof identity exchanging currency kindly help thanks advance'
+S'which branch south mumb u hv cash deposit automatic machine it b used deposit  notes'
 p596
 aS'miscellaneous'
 p597
 aa(lp598
-S'which branch south mumb u hv cash deposit automatic machine it b used deposit  notes'
+S'great arrangement banks cooperative staffs sec  noida branch why atms r working yet'
 p599
-aS'miscellaneous'
+aS'compliment'
 p600
 aa(lp601
-S'great arrangement banks cooperative staffs sec  noida branch why atms r working yet'
+S'sent u contact details crn no'
 p602
-aS'compliment'
+aS'miscellaneous'
 p603
 aa(lp604
-S'sent u contact details crn no'
+S'followfriday top influencers week have great weekend  gtgt get free httpstcowrkzrolk'
 p605
-aS'miscellaneous'
+aS'compliment'
 p606
 aa(lp607
-S'followfriday top influencers week have great weekend  gtgt get free httpstcowrkzrolk'
+S'okay thats depositing blackmoney kotakbankltd'
 p608
-aS'compliment'
+aS'displeasure'
 p609
 aa(lp610
-S'okay thats depositing blackmoney kotakbankltd'
+S'the team of kotak mahendra bank thane khopat are doing great job by managing the public in exchanging money'
 p611
-aS'displeasure'
+aS'compliment'
 p612
 aa(lp613
-S'the team of kotak mahendra bank thane khopat are doing great job by managing the public in exchanging money'
-p614
-aS'compliment'
-p615
-aa(lp616
 S'without informing u guys deducted approx  accunt salary zero balance account'
-p617
+p614
 aS'displeasure'
+p615
+aag613
+a(lp616
+S'is computerised generated replies  kotakbankltd'
+p617
+aS'miscellaneous'
 p618
 aag616
 a(lp619
-S'is computerised generated replies  kotakbankltd'
-p620
-aS'miscellaneous'
-p621
-aag619
-a(lp622
 S'fine thanks  token system started by public bank'
-p623
+p620
 aS'compliment'
+p621
+aa(lp622
+S'im  mahavirnagar branch  line every transaction why dont separate counter only cash deposits'
+p623
+aS'displeasure'
 p624
 aa(lp625
-S'im  mahavirnagar branch  line every transaction why dont separate counter only cash deposits'
+S'paid  days reverse pay day late takes  months great customer service'
 p626
-aS'displeasure'
+aS'compliment'
 p627
 aa(lp628
-S'paid  days reverse pay day late takes  months great customer service'
+S'team say go bank exchange money i exchange money got'
 p629
-aS'compliment'
+aS'displeasure'
 p630
 aa(lp631
-S'team say go bank exchange money i exchange money got'
+S'rt calmchandan for customers footfalls'
 p632
-aS'displeasure'
+aS'miscellaneous'
 p633
 aa(lp634
-S'rt calmchandan for customers footfalls'
+S'gr job staff members lavelle road bangalore branch'
 p635
-aS'miscellaneous'
+aS'compliment'
 p636
 aa(lp637
-S'gr job staff members lavelle road bangalore branch'
+S'despite repeated mails credit card cancelled'
 p638
-aS'compliment'
+aS'displeasure'
 p639
 aa(lp640
-S'despite repeated mails credit card cancelled'
+S'the apperication letter should be given to whole staff doing good job in absence of branch manager due to her health'
 p641
-aS'displeasure'
+aS'compliment'
 p642
 aa(lp643
-S'the apperication letter should be given to whole staff doing good job in absence of branch manager due to her health'
+S'action initiated'
 p644
-aS'compliment'
+aS'miscellaneous'
 p645
 aa(lp646
-S'action initiated'
+S'hadapsar branch awesome job single customer standing outside branch unlike neighboring banksspl emp near withdrawals'
 p647
-aS'miscellaneous'
+aS'compliment'
 p648
 aa(lp649
-S'hadapsar branch awesome job single customer standing outside branch unlike neighboring banksspl emp near withdrawals'
+S'how kotak mahindra bank replied query posted indusind bank'
 p650
-aS'compliment'
+aS'miscellaneous'
 p651
 aa(lp652
-S'how kotak mahindra bank replied query posted indusind bank'
+S'could dm theyre hinjewadi'
 p653
 aS'miscellaneous'
 p654
 aa(lp655
-S'could dm theyre hinjewadi'
+S'when branch broke af brokebank'
 p656
-aS'miscellaneous'
+aS'displeasure'
 p657
 aa(lp658
-S'when branch broke af brokebank'
+S'modi saying deposit money bank bank deduction unnecessary charges responsible this modi or bank'
 p659
 aS'displeasure'
 p660
 aa(lp661
-S'modi saying deposit money bank bank deduction unnecessary charges responsible this modi or bank'
+S'i able receive otp payment ghanta digitalbanking help'
 p662
 aS'displeasure'
 p663
 aa(lp664
-S'i able receive otp payment ghanta digitalbanking help'
+S'rt llmanishll looks like indulging black money exchange since morning local branch money ki'
 p665
-aS'displeasure'
+aS'miscellaneous'
 p666
 aa(lp667
-S'rt llmanishll looks like indulging black money exchange since morning local branch money ki'
-p668
-aS'miscellaneous'
-p669
-aa(lp670
 S'thanks helpful service we really appreciate working till  pm yesterday help us newalipore'
+p668
+aS'compliment'
+p669
+aag667
+a(lp670
+S'delighted experience prahlad nagar branch staff supportive inspire stress factor'
 p671
 aS'compliment'
 p672
 aag670
 a(lp673
-S'delighted experience prahlad nagar branch staff supportive inspire stress factor'
+S'seek customer id deposit cash kyc okayed bank account why kotak ignoring rbi norms udaykotak'
 p674
-aS'compliment'
+aS'displeasure'
 p675
 aag673
 a(lp676
-S'seek customer id deposit cash kyc okayed bank account why kotak ignoring rbi norms udaykotak'
-p677
-aS'displeasure'
-p678
-aag676
-a(lp679
 S'ur branch vivek vihar well managed n work done without hassle a lot better compared icicibank kudos'
-p680
+p677
 aS'compliment'
+p678
+aa(lp679
+S'atm doesnt money delivermostly atms shutter down'
+p680
+aS'displeasure'
 p681
 aa(lp682
-S'atm doesnt money delivermostly atms shutter down'
-p683
-aS'displeasure'
-p684
-aa(lp685
 S'salary credited den  month case happes my salary came aug sep oct novembe'
-p686
+p683
 aS'miscellaneous'
-p687
-aag685
-a(lp688
+p684
+aag682
+a(lp685
 S'worst slowest service poor online servicestransactionfail'
+p686
+aS'displeasure'
+p687
+aa(lp688
+S'thanks quick replypls needful'
 p689
 aS'displeasure'
 p690
 aa(lp691
-S'thanks quick replypls needful'
+S'please confirm kotak bank hinjewadi atm would replenished today'
 p692
 aS'displeasure'
 p693
 aa(lp694
-S'please confirm kotak bank hinjewadi atm would replenished today'
+S'would lite appreciate kotak bank services the way serving nation amazing'
 p695
-aS'displeasure'
+aS'compliment'
 p696
 aa(lp697
-S'would lite appreciate kotak bank services the way serving nation amazing'
+S'khopat thane branch mr shiva mr dipesh mr girish there auditor the whole staff including peon watchman all cooperativei like'
 p698
 aS'compliment'
 p699
 aa(lp700
-S'khopat thane branch mr shiva mr dipesh mr girish there auditor the whole staff including peon watchman all cooperativei like'
+S'rt debayanc please bit customer oriented i chasing debit card onlin updating'
 p701
-aS'compliment'
+aS'displeasure'
 p702
 aa(lp703
-S'rt debayanc please bit customer oriented i chasing debit card onlin updating'
+S'sir i visited kmbl vasai road branch twice  months open ac one responding i dnt know'
 p704
 aS'displeasure'
 p705
-aa(lp706
-S'sir i visited kmbl vasai road branch twice  months open ac one responding i dnt know'
+aag703
+a(lp706
+S'rt kawshivani  worst bank they giving robotic answers since  oct issue yet resol'
 p707
 aS'displeasure'
 p708
-aag706
-a(lp709
-S'rt kawshivani  worst bank they giving robotic answers since  oct issue yet resol'
+aa(lp709
+S'many years work small issue pathetic service'
 p710
 aS'displeasure'
 p711
 aa(lp712
-S'many years work small issue pathetic service'
+S'lets customers come know solving simple case much time required its bank case'
 p713
 aS'displeasure'
 p714
-aa(lp715
-S'lets customers come know solving simple case much time required its bank case'
-p716
-aS'displeasure'
-p717
-aag715
-a(lp718
+aag712
+a(lp715
 S'active bank enroll customers amp actively guide finance'
-p719
+p716
 aS'compliment'
+p717
+aa(lp718
+S'rt norafatehi first money debited account without authorization hvnt help  days kotakbankltd'
+p719
+aS'displeasure'
 p720
 aa(lp721
-S'rt norafatehi first money debited account without authorization hvnt help  days kotakbankltd'
+S'i messaged several times least concern'
 p722
 aS'displeasure'
 p723
 aa(lp724
-S'i messaged several times least concern'
+S'third grade bank india'
 p725
 aS'displeasure'
 p726
 aa(lp727
-S'third grade bank india'
+S'thats reason regretting open account kotak'
 p728
 aS'displeasure'
 p729
 aa(lp730
-S'thats reason regretting open account kotak'
+S'plz help'
 p731
-aS'displeasure'
+aS'miscellaneous'
 p732
 aa(lp733
-S'plz help'
+S'pmoind'
 p734
-aS'miscellaneous'
+aS'compliment'
 p735
 aa(lp736
-S'pmoind'
+S'rt shiladitya went branches huge lines way'
 p737
-aS'compliment'
+aS'miscellaneous'
 p738
 aa(lp739
-S'rt shiladitya went branches huge lines way'
+S'sure request assign good responsible single relationship manager both accounts'
 p740
 aS'miscellaneous'
 p741
 aa(lp742
-S'sure request assign good responsible single relationship manager both accounts'
+S'been  branches hyderabad  exchange service bank customers demonetisation backseat'
 p743
-aS'miscellaneous'
+aS'displeasure'
 p744
 aa(lp745
-S'been  branches hyderabad  exchange service bank customers demonetisation backseat'
+S'rt bondaj guys amazing job customer service lot patience cheers greatbanking banerroad'
 p746
-aS'displeasure'
+aS'compliment'
 p747
 aa(lp748
-S'rt bondaj guys amazing job customer service lot patience cheers greatbanking banerroad'
+S'an amount rs debited saving account dont know why can check out'
 p749
-aS'compliment'
+aS'miscellaneous'
 p750
 aa(lp751
-S'an amount rs debited saving account dont know why can check out'
+S'care tell result investigation why card wasnt working one responded bank'
 p752
-aS'miscellaneous'
+aS'displeasure'
 p753
 aa(lp754
-S'care tell result investigation why card wasnt working one responded bank'
-p755
-aS'displeasure'
-p756
-aa(lp757
 S'busy creative sms marketing bunch jokers udaykotak'
-p758
+p755
 aS'miscellaneous'
-p759
-aag757
-ag757
-a(lp760
+p756
+aag754
+ag754
+a(lp757
 S'your ghatkopar east branch working people and ur manager rude wid people pls take action'
-p761
+p758
 aS'displeasure'
+p759
+aa(lp760
+S'we informed look matter amp take necessary steps atm made accesible fo httpstcoxcqbubye'
+p761
+aS'miscellaneous'
 p762
 aa(lp763
-S'we informed look matter amp take necessary steps atm made accesible fo httpstcoxcqbubye'
+S'thank appreciate efforts make exchange currency trouble free'
 p764
-aS'miscellaneous'
+aS'compliment'
 p765
 aa(lp766
-S'thank appreciate efforts make exchange currency trouble free'
+S'i wouldve done st instance well done miss kotak'
 p767
 aS'compliment'
 p768
 aa(lp769
-S'i wouldve done st instance well done miss kotak'
+S'i think money got print modiji speech'
 p770
-aS'compliment'
+aS'miscellaneous'
 p771
 aa(lp772
-S'i think money got print modiji speech'
+S'two weeks one contacted me'
 p773
-aS'miscellaneous'
+aS'displeasure'
 p774
 aa(lp775
-S'two weeks one contacted me'
+S'rt kamessubbaraman staff courteous helped people smile appreciate way staff puram branch hand'
 p776
-aS'displeasure'
+aS'compliment'
 p777
 aa(lp778
-S'rt kamessubbaraman staff courteous helped people smile appreciate way staff puram branch hand'
+S'cc pmoindia'
 p779
-aS'compliment'
+aS'displeasure'
 p780
 aa(lp781
-S'cc pmoindia'
+S'httpstcoejoetsqv'
 p782
-aS'displeasure'
+aS'compliment'
 p783
 aa(lp784
-S'httpstcoejoetsqv'
+S'actually really inefficiently had return twice due lack cashwhile banks r fine'
 p785
-aS'compliment'
+aS'displeasure'
 p786
 aa(lp787
-S'actually really inefficiently had return twice due lack cashwhile banks r fine'
+S'offers given used papers'
 p788
 aS'displeasure'
 p789
 aa(lp790
-S'offers given used papers'
+S'just visited kotakbankltd not much rush the staff cordial helpful'
 p791
-aS'displeasure'
+aS'compliment'
 p792
 aa(lp793
-S'just visited kotakbankltd not much rush the staff cordial helpful'
+S'bad services kotak bvi branch'
 p794
-aS'compliment'
+aS'displeasure'
 p795
 aa(lp796
-S'bad services kotak bvi branch'
+S'decides resolve issue without contacting'
 p797
-aS'displeasure'
+aS'compliment'
 p798
 aa(lp799
-S'decides resolve issue without contacting'
+S'long take'
 p800
-aS'compliment'
+aS'miscellaneous'
 p801
 aa(lp802
-S'long take'
+S'none atm working right  its already  nov in east kailash'
 p803
-aS'miscellaneous'
+aS'displeasure'
 p804
 aa(lp805
-S'none atm working right  its already  nov in east kailash'
+S'dont readiness yet deal situation idbibank'
 p806
 aS'displeasure'
 p807
 aa(lp808
-S'dont readiness yet deal situation idbibank'
+S'false sb marg branch lower parel mumbai xchngd notes ppl n said cash xchng'
 p809
 aS'displeasure'
 p810
 aa(lp811
-S'false sb marg branch lower parel mumbai xchngd notes ppl n said cash xchng'
+S'can please tell many days take open account call'
 p812
-aS'displeasure'
+aS'miscellaneous'
 p813
 aa(lp814
-S'can please tell many days take open account call'
+S'book  tickets kotak platinum card get  tickets free  its  plus  free'
 p815
 aS'miscellaneous'
 p816
 aa(lp817
-S'book  tickets kotak platinum card get  tickets free  its  plus  free'
-p818
-aS'miscellaneous'
-p819
-aa(lp820
 S'i agreed statementsif refund tax either reactivate card'
+p818
+aS'compliment'
+p819
+aag817
+a(lp820
+S'rt kotakbankltd go cashless kotak mobile banking app one stop destination banking needs httpstcofrdsdpn dem'
 p821
 aS'compliment'
 p822
-aag820
-a(lp823
-S'rt kotakbankltd go cashless kotak mobile banking app one stop destination banking needs httpstcofrdsdpn dem'
+aa(lp823
+S'will i get money exchanged i go now'
 p824
-aS'compliment'
+aS'miscellaneous'
 p825
 aa(lp826
-S'will i get money exchanged i go now'
+S'you rt it httpstcoixisdrvuud'
 p827
 aS'miscellaneous'
 p828
 aa(lp829
-S'you rt it httpstcoixisdrvuud'
+S'i thought bank belongs u'
 p830
-aS'miscellaneous'
+aS'displeasure'
 p831
 aa(lp832
-S'i thought bank belongs u'
+S'no need i closed accounts got money back so i dont care kotakmostpatheticbank'
 p833
 aS'displeasure'
 p834
 aa(lp835
-S'no need i closed accounts got money back so i dont care kotakmostpatheticbank'
+S'sitting ur surajpur branch since last  hours havent got money what ur relevant team'
 p836
 aS'displeasure'
 p837
 aa(lp838
-S'sitting ur surajpur branch since last  hours havent got money what ur relevant team'
+S'please separate queue senior citizens handicapped branches'
 p839
-aS'displeasure'
+aS'miscellaneous'
 p840
 aa(lp841
-S'please separate queue senior citizens handicapped branches'
+S'your general insurance big scam  dep cashless insurance honored'
 p842
-aS'miscellaneous'
+aS'displeasure'
 p843
 aa(lp844
-S'your general insurance big scam  dep cashless insurance honored'
+S'transferred money  hours back still showing users account whats happening'
 p845
 aS'displeasure'
 p846
 aa(lp847
-S'transferred money  hours back still showing users account whats happening'
+S'hope get response'
 p848
-aS'displeasure'
+aS'miscellaneous'
 p849
 aa(lp850
-S'hope get response'
+S'nobody contacted even dm'
 p851
-aS'miscellaneous'
+aS'displeasure'
 p852
 aa(lp853
-S'nobody contacted even dm'
+S'jolly singh name nice person'
 p854
-aS'displeasure'
+aS'compliment'
 p855
 aa(lp856
-S'jolly singh name nice person'
+S'branch said contact infrom abt status cheque im still waiting im broke'
 p857
-aS'compliment'
+aS'displeasure'
 p858
 aa(lp859
-S'branch said contact infrom abt status cheque im still waiting im broke'
+S'funny video makes n important point abt currency carecurrency httpstcowkpywlaeit'
 p860
-aS'displeasure'
+aS'miscellaneous'
 p861
 aa(lp862
-S'funny video makes n important point abt currency carecurrency httpstcowkpywlaeit'
+S'u blocked card without notice bothering process new card request what hell wrong you'
 p863
-aS'miscellaneous'
+aS'displeasure'
 p864
 aa(lp865
-S'u blocked card without notice bothering process new card request what hell wrong you'
+S'sitting ur surajpur branch since last  hours havent got money what ur relevant team'
 p866
 aS'displeasure'
 p867
 aa(lp868
-S'sitting ur surajpur branch since last  hours havent got money what ur relevant team'
+S'please separate queue senior citizens handicapped branches'
 p869
-aS'displeasure'
+aS'miscellaneous'
 p870
 aa(lp871
-S'please separate queue senior citizens handicapped branches'
+S'your general insurance big scam  dep cashless insurance honored'
 p872
-aS'miscellaneous'
+aS'displeasure'
 p873
 aa(lp874
-S'your general insurance big scam  dep cashless insurance honored'
+S'transferred money  hours back still showing users account whats happening'
 p875
 aS'displeasure'
 p876
 aa(lp877
-S'transferred money  hours back still showing users account whats happening'
+S'hope get response'
 p878
-aS'displeasure'
+aS'miscellaneous'
 p879
 aa(lp880
-S'hope get response'
+S'nobody contacted even dm'
 p881
-aS'miscellaneous'
+aS'displeasure'
 p882
 aa(lp883
-S'nobody contacted even dm'
+S'jolly singh name nice person'
 p884
-aS'displeasure'
+aS'compliment'
 p885
 aa(lp886
-S'jolly singh name nice person'
+S'branch said contact infrom abt status cheque im still waiting im broke'
 p887
-aS'compliment'
+aS'displeasure'
 p888
 aa(lp889
-S'branch said contact infrom abt status cheque im still waiting im broke'
+S'funny video makes n important point abt currency carecurrency httpstcowkpywlaeit'
 p890
-aS'displeasure'
+aS'miscellaneous'
 p891
 aa(lp892
-S'funny video makes n important point abt currency carecurrency httpstcowkpywlaeit'
+S'u blocked card without notice bothering process new card request what hell wrong you'
 p893
-aS'miscellaneous'
+aS'displeasure'
 p894
 aa(lp895
-S'u blocked card without notice bothering process new card request what hell wrong you'
+S'i already closed useless bank'
 p896
 aS'displeasure'
 p897
 aa(lp898
-S'i already closed useless bank'
+S'hi i redeem credit card reward points'
 p899
-aS'displeasure'
+aS'miscellaneous'
 p900
 aa(lp901
-S'hi i redeem credit card reward points'
+S'so q sir r u giving cash  or wht r no gets cash'
 p902
 aS'miscellaneous'
 p903
 aa(lp904
-S'so q sir r u giving cash  or wht r no gets cash'
+S'no grudge  bt maybe  intimation exactly money  i understand situation well'
 p905
 aS'miscellaneous'
 p906
 aa(lp907
-S'no grudge  bt maybe  intimation exactly money  i understand situation well'
+S'rt kotakbankltd we glad like services thanks lot appreciating efforts  httpstcogtpqckyxbw'
 p908
-aS'miscellaneous'
+aS'compliment'
 p909
 aa(lp910
-S'rt kotakbankltd we glad like services thanks lot appreciating efforts  httpstcogtpqckyxbw'
-p911
-aS'compliment'
-p912
-aa(lp913
 S'awesome one robot replied annoying replyso predictableits  months'
-p914
+p911
 aS'displeasure'
-p915
-aag913
-a(lp916
+p912
+aag910
+a(lp913
 S'please specify branch well'
-p917
+p914
 aS'miscellaneous'
+p915
+aa(lp916
+S'your bank charging non bank atm charges month aug nov you people cheaters worst bank i ever seen'
+p917
+aS'displeasure'
 p918
 aa(lp919
-S'your bank charging non bank atm charges month aug nov you people cheaters worst bank i ever seen'
+S'hi nariman point branch refused currency exchange saying  exchange rs only once till  what crap'
 p920
 aS'displeasure'
 p921
 aa(lp922
-S'hi nariman point branch refused currency exchange saying  exchange rs only once till  what crap'
+S'ok thanks prompt reponse'
 p923
-aS'displeasure'
+aS'compliment'
 p924
 aa(lp925
-S'ok thanks prompt reponse'
-p926
-aS'compliment'
-p927
-aa(lp928
 S'yet issue resolved'
-p929
+p926
 aS'displeasure'
-p930
-aag928
-a(lp931
+p927
+aag925
+a(lp928
 S'didnt finance minister announce atm start working today'
-p932
+p929
 aS'miscellaneous'
+p930
+aa(lp931
+S'refer provided screenshot reverse money right now'
+p932
+aS'displeasure'
 p933
 aa(lp934
-S'refer provided screenshot reverse money right now'
+S'ur number reached wow seriously'
 p935
 aS'displeasure'
 p936
 aa(lp937
-S'ur number reached wow seriously'
+S'kammanahalli bangalore branch dispensing maximum  inr why'
 p938
 aS'displeasure'
 p939
 aa(lp940
-S'kammanahalli bangalore branch dispensing maximum  inr why'
+S'acquire banks functioning perfectly old customers bear brunt'
 p941
 aS'displeasure'
 p942
 aa(lp943
-S'acquire banks functioning perfectly old customers bear brunt'
+S'why inconvenient bank i cant change registered number using internet banking account'
 p944
 aS'displeasure'
 p945
 aa(lp946
-S'why inconvenient bank i cant change registered number using internet banking account'
+S'please tel atm start working borivali if possible u share list atms working will help lot'
 p947
-aS'displeasure'
+aS'miscellaneous'
 p948
 aa(lp949
-S'please tel atm start working borivali if possible u share list atms working will help lot'
+S'fill atms'
 p950
-aS'miscellaneous'
+aS'displeasure'
 p951
 aa(lp952
-S'fill atms'
+S'sad see reputed bank like kotakbank misinformed perks opening acct amp slapped charge kkotakfraud'
 p953
 aS'displeasure'
 p954
 aa(lp955
-S'sad see reputed bank like kotakbank misinformed perks opening acct amp slapped charge kkotakfraud'
+S'thinking close current account permanently mahindera bank'
 p956
 aS'displeasure'
 p957
 aa(lp958
-S'thinking close current account permanently mahindera bank'
+S'first salary cheque tat cheque  day  deposit slip sud plz help'
 p959
-aS'displeasure'
+aS'miscellaneous'
 p960
 aa(lp961
-S'first salary cheque tat cheque  day  deposit slip sud plz help'
+S'worst service good decision'
 p962
-aS'miscellaneous'
+aS'displeasure'
 p963
 aa(lp964
-S'worst service good decision'
+S'i travel today marriage relative amp money nomoney  contd'
 p965
 aS'displeasure'
 p966
 aa(lp967
-S'i travel today marriage relative amp money nomoney  contd'
+S'really worst cash exchange services dont wont work'
 p968
 aS'displeasure'
 p969
 aa(lp970
-S'really worst cash exchange services dont wont work'
+S'getting frustrated customer care services after  days denying previous info this done'
 p971
 aS'displeasure'
 p972
 aa(lp973
-S'getting frustrated customer care services after  days denying previous info this done'
+S'why much rushthere enough time exchange notes'
 p974
-aS'displeasure'
+aS'miscellaneous'
 p975
 aa(lp976
-S'why much rushthere enough time exchange notes'
+S'sion w branch staff exchage  once not exchanging cash again and entertain non account holder'
 p977
-aS'miscellaneous'
+aS'displeasure'
 p978
 aa(lp979
-S'sion w branch staff exchage  once not exchanging cash again and entertain non account holder'
+S'u ur bank people hopeless intelligent taking money customer without fault'
 p980
 aS'displeasure'
 p981
-aa(lp982
-S'u ur bank people hopeless intelligent taking money customer without fault'
+aag979
+a(lp982
+S'cant even handle  customers wating sinc  pm'
 p983
 aS'displeasure'
 p984
-aag982
-a(lp985
-S'cant even handle  customers wating sinc  pm'
+aa(lp985
+S'seeking acknowledgment check dm'
 p986
-aS'displeasure'
+aS'miscellaneous'
 p987
 aa(lp988
-S'seeking acknowledgment check dm'
+S'rt arjunrammeghwal we informed look matter amp take necessary steps atm made accesible p'
 p989
 aS'miscellaneous'
 p990
 aa(lp991
-S'rt arjunrammeghwal we informed look matter amp take necessary steps atm made accesible p'
+S'horrible customer service just insanely horrible'
 p992
-aS'miscellaneous'
+aS'displeasure'
 p993
 aa(lp994
-S'horrible customer service just insanely horrible'
+S'newspaper high rated newspaper totally deserves articles avlbl premium users'
 p995
-aS'displeasure'
+aS'miscellaneous'
 p996
 aa(lp997
-S'newspaper high rated newspaper totally deserves articles avlbl premium users'
+S'sad'
 p998
 aS'miscellaneous'
 p999
 aa(lp1000
-S'sad'
+S'happening financial capital india moreover kotak people took customers first'
 p1001
-aS'miscellaneous'
+aS'displeasure'
 p1002
 aa(lp1003
-S'happening financial capital india moreover kotak people took customers first'
+S'with exception sixes sevens disappointed httpstconnzjfocp'
 p1004
 aS'displeasure'
 p1005
-aa(lp1006
-S'with exception sixes sevens disappointed httpstconnzjfocp'
+aag1003
+a(lp1006
+S'unhelpful  zero replies tweets sent way dont make worse'
 p1007
 aS'displeasure'
 p1008
-aag1006
-a(lp1009
-S'unhelpful  zero replies tweets sent way dont make worse'
+aa(lp1009
+S'exactly case also responding mails also worstbank'
 p1010
 aS'displeasure'
 p1011
 aa(lp1012
-S'exactly case also responding mails also worstbank'
+S'hail banks staff rebuilding india'
 p1013
-aS'displeasure'
+aS'compliment'
 p1014
 aa(lp1015
-S'hail banks staff rebuilding india'
+S'atm near andheri station east open specific reason httpstcojhfmgmst'
 p1016
-aS'compliment'
+aS'miscellaneous'
 p1017
 aa(lp1018
-S'atm near andheri station east open specific reason httpstcojhfmgmst'
+S'telling customers use net banking avoid long queues demonetisation zero preparations goi'
 p1019
-aS'miscellaneous'
+aS'compliment'
 p1020
 aa(lp1021
-S'telling customers use net banking avoid long queues demonetisation zero preparations goi'
+S'rt aliboss nora ask owns bank'
 p1022
-aS'compliment'
+aS'miscellaneous'
 p1023
 aa(lp1024
-S'rt aliboss nora ask owns bank'
+S'i get comm address changed online'
 p1025
 aS'miscellaneous'
 p1026
 aa(lp1027
-S'i get comm address changed online'
+S'pmoindia'
 p1028
-aS'miscellaneous'
+aS'compliment'
 p1029
 aa(lp1030
-S'pmoindia'
+S'spln contact no'
 p1031
-aS'compliment'
+aS'miscellaneous'
 p1032
 aa(lp1033
-S'spln contact no'
+S'hni banks never queues'
 p1034
 aS'miscellaneous'
 p1035
 aa(lp1036
-S'hni banks never queues'
+S'kotakbankltd got done trust its smooth thanks httpstcoxndxootui'
 p1037
-aS'miscellaneous'
+aS'compliment'
 p1038
 aa(lp1039
-S'kotakbankltd got done trust its smooth thanks httpstcoxndxootui'
+S'i deposited day  hrs standing qno probnext day i go again cash'
 p1040
-aS'compliment'
+aS'displeasure'
 p1041
 aa(lp1042
-S'i deposited day  hrs standing qno probnext day i go again cash'
+S'following intimation received httpstcojdfnbiz'
 p1043
-aS'displeasure'
+aS'miscellaneous'
 p1044
 aa(lp1045
-S'following intimation received httpstcojdfnbiz'
+S'can i know whose home insurance life insurance sold  give docs better'
 p1046
-aS'miscellaneous'
+aS'displeasure'
 p1047
 aa(lp1048
-S'can i know whose home insurance life insurance sold  give docs better'
+S'i know thats copy paste youve sent everyone pls let know time atms opening asap'
 p1049
-aS'displeasure'
+aS'miscellaneous'
 p1050
 aa(lp1051
-S'i know thats copy paste youve sent everyone pls let know time atms opening asap'
-p1052
-aS'miscellaneous'
-p1053
-aa(lp1054
 S'visited nepean sea road branch mumbai staff highly efficient courteousvery smooth organised'
-p1055
+p1052
 aS'compliment'
-p1056
-aag1054
-a(lp1057
+p1053
+aag1051
+a(lp1054
 S'i wonder i file claim fr cashing cheques immediately acctwhat abt ni act amp ur obligations'
+p1055
+aS'displeasure'
+p1056
+aa(lp1057
+S'pls clarify going court solution left stupid bank full stupid people  rbi'
 p1058
 aS'displeasure'
 p1059
-aa(lp1060
-S'pls clarify going court solution left stupid bank full stupid people  rbi'
-p1061
-aS'displeasure'
-p1062
-aag1060
-a(lp1063
+aag1057
+a(lp1060
 S'plz refer message httpstcofjavzujll httpstcoavprelerd'
+p1061
+aS'miscellaneous'
+p1062
+aa(lp1063
+S'rt kotakbankltd thats superb we happy like service have fantastic day ahead httpstcorcqrtvwy'
 p1064
 aS'miscellaneous'
 p1065
 aa(lp1066
-S'rt kotakbankltd thats superb we happy like service have fantastic day ahead httpstcorcqrtvwy'
+S'rt sootradhar but vile parle east branch says cash received rbi  kotakbankltd'
 p1067
 aS'miscellaneous'
 p1068
 aa(lp1069
-S'rt sootradhar but vile parle east branch says cash received rbi  kotakbankltd'
+S'no money exchange nonaccount holders koramangala th blk bm says come  pm what common man'
 p1070
-aS'miscellaneous'
+aS'displeasure'
 p1071
 aa(lp1072
-S'no money exchange nonaccount holders koramangala th blk bm says come  pm what common man'
+S'pls see dm'
 p1073
-aS'displeasure'
+aS'miscellaneous'
 p1074
 aa(lp1075
-S'pls see dm'
+S'rt pryankaa thank much the staff helpful well done'
 p1076
-aS'miscellaneous'
+aS'compliment'
 p1077
 aa(lp1078
-S'rt pryankaa thank much the staff helpful well done'
+S'hiring job want work u'
 p1079
-aS'compliment'
+aS'miscellaneous'
 p1080
 aa(lp1081
-S'hiring job want work u'
+S'pls refer previous two tweets you time atms opening'
 p1082
 aS'miscellaneous'
 p1083
 aa(lp1084
-S'pls refer previous two tweets you time atms opening'
+S'made day jst withdraw cash you nvr let us down hats  ur management u r savior  many like me keep going'
 p1085
-aS'miscellaneous'
+aS'compliment'
 p1086
 aa(lp1087
-S'made day jst withdraw cash you nvr let us down hats  ur management u r savior  many like me keep going'
+S'staff goregaon distributing lays chips amp water neighbors distributing water food touched demonetisation'
 p1088
 aS'compliment'
 p1089
 aa(lp1090
-S'staff goregaon distributing lays chips amp water neighbors distributing water food touched demonetisation'
+S'still waiting call i think people started making fraud promises also u cant please let know'
 p1091
-aS'compliment'
+aS'displeasure'
 p1092
 aa(lp1093
-S'still waiting call i think people started making fraud promises also u cant please let know'
+S'well managed functioning'
 p1094
-aS'displeasure'
+aS'compliment'
 p1095
 aa(lp1096
-S'well managed functioning'
+S'wl u tell wts going sir apne paise ke liye hi mujhe haath jodne pad rahe'
 p1097
-aS'compliment'
+aS'displeasure'
 p1098
 aa(lp1099
-S'wl u tell wts going sir apne paise ke liye hi mujhe haath jodne pad rahe'
+S'bankwalas  real heroes day sorry cant mention salute'
 p1100
-aS'displeasure'
+aS'compliment'
 p1101
 aa(lp1102
-S'bankwalas  real heroes day sorry cant mention salute'
+S'kotakbankltd'
 p1103
 aS'compliment'
 p1104
 aa(lp1105
-S'kotakbankltd'
+S'atms borivali banch working'
 p1106
-aS'compliment'
+aS'displeasure'
 p1107
 aa(lp1108
-S'atms borivali banch working'
+S'check dm'
 p1109
-aS'displeasure'
+aS'miscellaneous'
 p1110
 aa(lp1111
-S'check dm'
+S'rt kotakbankltd did something happen let us know via dm help way team kotak'
 p1112
 aS'miscellaneous'
 p1113
 aa(lp1114
-S'rt kotakbankltd did something happen let us know via dm help way team kotak'
+S'smooth operations kalina branch good management kudos'
 p1115
-aS'miscellaneous'
+aS'compliment'
 p1116
 aa(lp1117
-S'smooth operations kalina branch good management kudos'
+S'nice arrang ment payment cluster head self workvery nice chennai kotak mahindra arrang ment'
 p1118
 aS'compliment'
 p1119
 aa(lp1120
-S'nice arrang ment payment cluster head self workvery nice chennai kotak mahindra arrang ment'
+S'discussed ur employees plsss mark loan npa till tym charges waived i pay emi'
 p1121
-aS'compliment'
+aS'miscellaneous'
 p1122
 aa(lp1123
-S'discussed ur employees plsss mark loan npa till tym charges waived i pay emi'
-p1124
-aS'miscellaneous'
-p1125
-aa(lp1126
 S'even ceo bank also loop still least interested interested money'
+p1124
+aS'displeasure'
+p1125
+aag1123
+a(lp1126
+S'please help kotak mahindra bank going rbicentral government order amp cheating public httpstcotqahlpj'
 p1127
 aS'displeasure'
 p1128
-aag1126
-a(lp1129
-S'please help kotak mahindra bank going rbicentral government order amp cheating public httpstcotqahlpj'
+aa(lp1129
+S'rt finelychopped would love know debits cards switched amp safebanking an'
 p1130
-aS'displeasure'
+aS'miscellaneous'
 p1131
 aa(lp1132
-S'rt finelychopped would love know debits cards switched amp safebanking an'
+S'update query why intimation  sms account gets fined udaykotak'
 p1133
 aS'miscellaneous'
 p1134
-aa(lp1135
-S'update query why intimation  sms account gets fined udaykotak'
-p1136
-aS'miscellaneous'
-p1137
-aag1135
-a(lp1138
+aag1132
+a(lp1135
 S'kotak paota branch atm giving money kotakbankltd'
+p1136
+aS'displeasure'
+p1137
+aa(lp1138
+S'poor customer service use kotak account hdfc far better'
 p1139
 aS'displeasure'
 p1140
 aa(lp1141
-S'poor customer service use kotak account hdfc far better'
+S'khadki branchexcellent cooperation staff splly branch manager personally look clientgrateful them'
 p1142
-aS'displeasure'
+aS'compliment'
 p1143
 aa(lp1144
-S'khadki branchexcellent cooperation staff splly branch manager personally look clientgrateful them'
+S'spams users crap sms do not send anything charged penalty keeping looting amp charging'
 p1145
-aS'compliment'
+aS'displeasure'
 p1146
 aa(lp1147
-S'spams users crap sms do not send anything charged penalty keeping looting amp charging'
+S'smooth operations kalina branch good management kudos'
 p1148
-aS'displeasure'
+aS'compliment'
 p1149
 aa(lp1150
-S'smooth operations kalina branch good management kudos'
+S'nice arrang ment payment cluster head self workvery nice chennai kotak mahindra arrang ment'
 p1151
 aS'compliment'
 p1152
 aa(lp1153
-S'nice arrang ment payment cluster head self workvery nice chennai kotak mahindra arrang ment'
+S'discussed ur employees plsss mark loan npa till tym charges waived i pay emi'
 p1154
-aS'compliment'
+aS'miscellaneous'
 p1155
 aa(lp1156
-S'discussed ur employees plsss mark loan npa till tym charges waived i pay emi'
-p1157
-aS'miscellaneous'
-p1158
-aa(lp1159
 S'even ceo bank also loop still least interested interested money'
+p1157
+aS'displeasure'
+p1158
+aag1156
+a(lp1159
+S'please help kotak mahindra bank going rbicentral government order amp cheating public httpstcotqahlpj'
 p1160
 aS'displeasure'
 p1161
-aag1159
-a(lp1162
-S'please help kotak mahindra bank going rbicentral government order amp cheating public httpstcotqahlpj'
+aa(lp1162
+S'rt finelychopped would love know debits cards switched amp safebanking an'
 p1163
-aS'displeasure'
+aS'miscellaneous'
 p1164
 aa(lp1165
-S'rt finelychopped would love know debits cards switched amp safebanking an'
+S'update query why intimation  sms account gets fined udaykotak'
 p1166
 aS'miscellaneous'
 p1167
-aa(lp1168
-S'update query why intimation  sms account gets fined udaykotak'
-p1169
-aS'miscellaneous'
-p1170
-aag1168
-a(lp1171
+aag1165
+a(lp1168
 S'kotak paota branch atm giving money kotakbankltd'
+p1169
+aS'displeasure'
+p1170
+aa(lp1171
+S'poor customer service use kotak account hdfc far better'
 p1172
 aS'displeasure'
 p1173
 aa(lp1174
-S'poor customer service use kotak account hdfc far better'
+S'khadki branchexcellent cooperation staff splly branch manager personally look clientgrateful them'
 p1175
-aS'displeasure'
+aS'compliment'
 p1176
 aa(lp1177
-S'khadki branchexcellent cooperation staff splly branch manager personally look clientgrateful them'
+S'spams users crap sms do not send anything charged penalty keeping looting amp charging'
 p1178
-aS'compliment'
+aS'displeasure'
 p1179
 aa(lp1180
-S'spams users crap sms do not send anything charged penalty keeping looting amp charging'
+S'sure have shared contact via dm expecting call'
 p1181
-aS'displeasure'
+aS'miscellaneous'
 p1182
 aa(lp1183
-S'sure have shared contact via dm expecting call'
+S'kotak bank makes rules allowing widraw  cheque noida  sector branch saying  allowed'
 p1184
-aS'miscellaneous'
+aS'displeasure'
 p1185
 aa(lp1186
-S'kotak bank makes rules allowing widraw  cheque noida  sector branch saying  allowed'
+S'easy'
 p1187
 aS'displeasure'
 p1188
 aa(lp1189
-S'easy'
-p1190
-aS'displeasure'
-p1191
-aa(lp1192
 S'i gone open bohri muslim ac asked gsfc help i make informed choice'
-p1193
+p1190
 aS'miscellaneous'
-p1194
-aag1192
-a(lp1195
+p1191
+aag1189
+a(lp1192
 S'thank plz fast im real broke rite'
+p1193
+aS'displeasure'
+p1194
+aa(lp1195
+S'poor service single atm working'
 p1196
 aS'displeasure'
 p1197
 aa(lp1198
-S'poor service single atm working'
+S'can u help get dm of ghatkopar east branch ft road mumbai'
 p1199
-aS'displeasure'
+aS'miscellaneous'
 p1200
 aa(lp1201
-S'can u help get dm of ghatkopar east branch ft road mumbai'
+S'the pits  kotakbankltd'
 p1202
-aS'miscellaneous'
+aS'displeasure'
 p1203
 aa(lp1204
-S'the pits  kotakbankltd'
+S'ramya srika nd anil dj koramangala branch refused exchange currencypmoindia narendramodi'
 p1205
 aS'displeasure'
 p1206
 aa(lp1207
-S'ramya srika nd anil dj koramangala branch refused exchange currencypmoindia narendramodi'
+S'u working still atm filled last  days switching accounts  bank udaykotak'
 p1208
 aS'displeasure'
 p1209
-aa(lp1210
-S'u working still atm filled last  days switching accounts  bank udaykotak'
+aag1207
+a(lp1210
+S'even rbi helpline number picked up'
 p1211
 aS'displeasure'
 p1212
-aag1210
-a(lp1213
-S'even rbi helpline number picked up'
+aa(lp1213
+S'rt mayankkamothi atm working and complain many time bank taking action kamchor badse'
 p1214
 aS'displeasure'
 p1215
 aa(lp1216
-S'rt mayankkamothi atm working and complain many time bank taking action kamchor badse'
+S'gulpanag mam fm says enq  l case companies tax exemption nil get huge tax gain why this'
 p1217
-aS'displeasure'
+aS'miscellaneous'
 p1218
 aa(lp1219
-S'gulpanag mam fm says enq  l case companies tax exemption nil get huge tax gain why this'
+S'also xerox copy id proof required i account carrying original withdrawal'
 p1220
-aS'miscellaneous'
+aS'displeasure'
 p1221
 aa(lp1222
-S'also xerox copy id proof required i account carrying original withdrawal'
+S'not really great dealing kotakbankltd'
 p1223
 aS'displeasure'
 p1224
 aa(lp1225
-S'not really great dealing kotakbankltd'
+S'rt aaditya shame ful act done  no resolution given  despite many efforts  u suck hard earned'
 p1226
 aS'displeasure'
 p1227
-aa(lp1228
-S'rt aaditya shame ful act done  no resolution given  despite many efforts  u suck hard earned'
-p1229
-aS'displeasure'
-p1230
-aag1228
-a(lp1231
+aag1225
+a(lp1228
 S'kudos depositing old notes via cash pick home great bank  bank with no worries all'
-p1232
+p1229
 aS'compliment'
+p1230
+aa(lp1231
+S'kotak bank branch erstwhile ing sohna road'
+p1232
+aS'miscellaneous'
 p1233
 aa(lp1234
-S'kotak bank branch erstwhile ing sohna road'
+S'arranged call i think call stuck unable reach me'
 p1235
 aS'miscellaneous'
 p1236
-aa(lp1237
-S'arranged call i think call stuck unable reach me'
+aag1234
+a(lp1237
+S'pls refer question  link httpstcoxyoewwza'
 p1238
 aS'miscellaneous'
 p1239
 aag1237
 a(lp1240
-S'pls refer question  link httpstcoxyoewwza'
-p1241
-aS'miscellaneous'
-p1242
-aag1240
-a(lp1243
 S'issue still remains unsolved highly incompetive team could please ask nodal officer nt team get touch'
+p1241
+aS'displeasure'
+p1242
+aa(lp1243
+S'fucking hard earned money hell gave permission u guys deduction kotakbankltd'
 p1244
 aS'displeasure'
 p1245
-aa(lp1246
-S'fucking hard earned money hell gave permission u guys deduction kotakbankltd'
-p1247
-aS'displeasure'
-p1248
-aag1246
-a(lp1249
+aag1243
+a(lp1246
 S'shall i take government help matter'
-p1250
+p1247
 aS'miscellaneous'
+p1248
+aa(lp1249
+S'problem facing amreli also needful'
+p1250
+aS'displeasure'
 p1251
 aa(lp1252
-S'problem facing amreli also needful'
+S'ok sir pl let us know'
 p1253
-aS'displeasure'
+aS'miscellaneous'
 p1254
 aa(lp1255
-S'ok sir pl let us know'
+S'something its easy impose deadlines without thinking logistics'
 p1256
-aS'miscellaneous'
+aS'displeasure'
 p1257
 aa(lp1258
-S'something its easy impose deadlines without thinking logistics'
+S'grt support u r providing common people defence colony branch sucks no sense talking plz help'
 p1259
 aS'displeasure'
 p1260
 aa(lp1261
-S'grt support u r providing common people defence colony branch sucks no sense talking plz help'
+S'may call now'
 p1262
-aS'displeasure'
+aS'miscellaneous'
 p1263
 aa(lp1264
-S'may call now'
+S'toll free'
 p1265
 aS'miscellaneous'
 p1266
 aa(lp1267
-S'toll free'
+S'rt ashokch sectionfir nodatedagainstkotaksecuritiesltd not action againstksl since last'
 p1268
-aS'miscellaneous'
+aS'displeasure'
 p1269
 aa(lp1270
-S'rt ashokch sectionfir nodatedagainstkotaksecuritiesltd not action againstksl since last'
+S'charged  rupees year never bothered inform why wtf httpstcopfgljvhq'
 p1271
 aS'displeasure'
 p1272
 aa(lp1273
-S'charged  rupees year never bothered inform why wtf httpstcopfgljvhq'
+S'atms golf course run cash ingkotak hdfc sbi  mismatch ddsupply'
 p1274
 aS'displeasure'
 p1275
 aa(lp1276
-S'atms golf course run cash ingkotak hdfc sbi  mismatch ddsupply'
+S'rt bhatnaturally helpful staff  saw assisting elderly cash exchange orderly queues mostly took us  mi'
 p1277
-aS'displeasure'
+aS'compliment'
 p1278
 aa(lp1279
-S'rt bhatnaturally helpful staff  saw assisting elderly cash exchange orderly queues mostly took us  mi'
+S'line growing bigger kodak customers getting preferential treatment lower parel bch'
 p1280
-aS'compliment'
+aS'displeasure'
 p1281
 aa(lp1282
-S'line growing bigger kodak customers getting preferential treatment lower parel bch'
+S'rupees please arrenged call back'
 p1283
-aS'displeasure'
+aS'miscellaneous'
 p1284
 aa(lp1285
-S'rupees please arrenged call back'
+S'an excellent experience morningno queue cash withdrawal atmsb acproblem want change'
 p1286
-aS'miscellaneous'
+aS'compliment'
 p1287
 aa(lp1288
-S'an excellent experience morningno queue cash withdrawal atmsb acproblem want change'
+S'rt sreekanthdass branch staff  worli great job very helpful courteous even chaos'
 p1289
 aS'compliment'
 p1290
 aa(lp1291
-S'rt sreekanthdass branch staff  worli great job very helpful courteous even chaos'
+S'tall claim bank time need could provide cash guy very poor arrangement amp service indeed wht action'
 p1292
-aS'compliment'
+aS'displeasure'
 p1293
 aa(lp1294
-S'tall claim bank time need could provide cash guy very poor arrangement amp service indeed wht action'
+S'indeed'
 p1295
-aS'displeasure'
+aS'miscellaneous'
 p1296
 aa(lp1297
-S'indeed'
+S'icicibank confusion whether ids needed deposits pl clarify'
 p1298
 aS'miscellaneous'
 p1299
 aa(lp1300
-S'icicibank confusion whether ids needed deposits pl clarify'
+S'dont single penny living   day walking branch like  km plz something'
 p1301
-aS'miscellaneous'
+aS'displeasure'
 p1302
 aa(lp1303
-S'dont single penny living   day walking branch like  km plz something'
+S'rt manishmeri nice arrang ment payment cluster head self workvery nice chennai kotak mahindra arrang'
 p1304
-aS'displeasure'
+aS'compliment'
 p1305
 aa(lp1306
-S'rt manishmeri nice arrang ment payment cluster head self workvery nice chennai kotak mahindra arrang'
+S'what point giving holiday vouchers account usage cant book seriously pathetic'
 p1307
-aS'compliment'
+aS'displeasure'
 p1308
 aa(lp1309
-S'what point giving holiday vouchers account usage cant book seriously pathetic'
+S'much new currency alloted kotak branch  exch process slow somethingfishy demonetisation'
 p1310
 aS'displeasure'
 p1311
 aa(lp1312
-S'much new currency alloted kotak branch  exch process slow somethingfishy demonetisation'
+S'rt imlathi  poor gal  kotak bank plz help'
 p1313
-aS'displeasure'
+aS'miscellaneous'
 p1314
 aa(lp1315
-S'rt imlathi  poor gal  kotak bank plz help'
+S'udaykotak'
 p1316
 aS'miscellaneous'
 p1317
 aa(lp1318
-S'udaykotak'
+S'many atm around area closedwhy cant u run hrs  shift service cust'
 p1319
-aS'miscellaneous'
+aS'displeasure'
 p1320
 aa(lp1321
-S'many atm around area closedwhy cant u run hrs  shift service cust'
+S'dont need miney  give resolution n try  understand v r salaried v r black owners'
 p1322
 aS'displeasure'
 p1323
 aa(lp1324
-S'dont need miney  give resolution n try  understand v r salaried v r black owners'
+S'plz connect'
 p1325
-aS'displeasure'
+aS'miscellaneous'
 p1326
 aa(lp1327
-S'plz connect'
+S'how many days want clear one cheque'
 p1328
-aS'miscellaneous'
+aS'displeasure'
 p1329
 aa(lp1330
-S'how many days want clear one cheque'
+S'shame money airports atms how expect people reach home narendramodi'
 p1331
 aS'displeasure'
 p1332
 aa(lp1333
-S'shame money airports atms how expect people reach home narendramodi'
+S'even small credit society much helpful u guysno call update'
 p1334
 aS'displeasure'
 p1335
-aa(lp1336
-S'even small credit society much helpful u guysno call update'
+aag1333
+a(lp1336
+S'no kotak electronic city phase'
 p1337
 aS'displeasure'
 p1338
-aag1336
-a(lp1339
-S'no kotak electronic city phase'
-p1340
-aS'displeasure'
-p1341
-aa(lp1342
+aa(lp1339
 S'rt vivekwhoelz kudos awesome staff amp management kandivaliw amp borivaliw branchfeel privileged'
+p1340
+aS'compliment'
+p1341
+aag1339
+a(lp1342
+S'rt waquaralamkhan would lite appreciate kotak bank services the way serving nation amazing'
 p1343
 aS'compliment'
 p1344
-aag1342
-a(lp1345
-S'rt waquaralamkhan would lite appreciate kotak bank services the way serving nation amazing'
+aa(lp1345
+S'atms still operational  its am th october by start process atm'
 p1346
-aS'compliment'
+aS'displeasure'
 p1347
 aa(lp1348
-S'atms still operational  its am th october by start process atm'
+S'staff lavele road bangalore welcoming amp helped exchangekudos'
 p1349
-aS'displeasure'
+aS'compliment'
 p1350
 aa(lp1351
-S'staff lavele road bangalore welcoming amp helped exchangekudos'
+S'rt manichejain dear please note intentionally causing harassment people exchanging currency notes https'
 p1352
-aS'compliment'
+aS'displeasure'
 p1353
 aa(lp1354
-S'rt manichejain dear please note intentionally causing harassment people exchanging currency notes https'
+S'may reach no'
 p1355
-aS'displeasure'
+aS'miscellaneous'
 p1356
 aa(lp1357
-S'may reach no'
+S'kotakbankltd every person coming branch met staff personnel amp explained procedurewait tim httpstcombehwoec'
 p1358
 aS'miscellaneous'
 p1359
 aa(lp1360
-S'kotakbankltd every person coming branch met staff personnel amp explained procedurewait tim httpstcombehwoec'
+S'not all bankers tough time manage httpstcozkdhyqn guys r great service httpstcowihpfeom'
 p1361
-aS'miscellaneous'
+aS'compliment'
 p1362
 aa(lp1363
-S'not all bankers tough time manage httpstcozkdhyqn guys r great service httpstcowihpfeom'
-p1364
-aS'compliment'
-p1365
-aa(lp1366
 S'this first morning  noon customercare fail httpstcokipmnthf'
-p1367
+p1364
 aS'miscellaneous'
+p1365
+aag1363
+a(lp1366
+S'mulund branch serving customers no exchange done shame arunjaitley'
+p1367
+aS'displeasure'
 p1368
 aag1366
 a(lp1369
-S'mulund branch serving customers no exchange done shame arunjaitley'
+S'single atm wrking sec  guru gram rbi'
 p1370
 aS'displeasure'
 p1371
-aag1369
-a(lp1372
-S'single atm wrking sec  guru gram rbi'
+aa(lp1372
+S'at this moment i am cashless no white no black in bankpocket'
 p1373
 aS'displeasure'
 p1374
-aa(lp1375
-S'at this moment i am cashless no white no black in bankpocket'
-p1376
-aS'displeasure'
-p1377
 aa.
