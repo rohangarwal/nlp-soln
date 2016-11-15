@@ -9,7 +9,7 @@ e.g. fsports_1(x, y)
 '''
 import sys
 import pickle
-sys.path.append('/home/ksameersrk/Documents/nlp-soln/unit4/MaxEnt')
+sys.path.append('/home/Work/Git/nlp-soln/unit4/MaxEnt')
 from nltk import sent_tokenize, word_tokenize
 from classifiers.feature_functions_base import FeatureFunctionsBase
 
@@ -56,14 +56,12 @@ class WikiFeatureFunctions(FeatureFunctionsBase):
     def fcompliment_1(self, words, y):
         comp = self.comp
         if (self.check_membership(comp, words)) and (y == "compliment"):
-            print 'compliment'
             return 1
         return 0
 
     def fdispleasure_1(self, words, y):
         disp = self.disp
         if (self.check_membership(disp, words)) and (y == "displeasure"):
-            print 'displeasure'
             return 1
         return 0
 

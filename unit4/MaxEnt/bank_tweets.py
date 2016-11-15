@@ -4,7 +4,8 @@ Created on 23-Jul-2016
 @author: Anantharaman
 '''
 import sys
-sys.path.append('/home/ksameersrk/Documents/nlp-soln/unit4/MaxEnt')
+import pickle
+sys.path.append('/home/Work/Git/nlp-soln/unit4/MaxEnt')
 from feature_function_tweets import WikiFeatureFunctions
 from classifiers.maxent_base import LogLinear
 import os
@@ -35,9 +36,26 @@ if __name__ == '__main__':
     dataset = prepare_dataset(supported_labels)
     clf = LogLinear(ff)
     clf.train(dataset, max_iter=50)
-    while True:
+
+    #Testing
+    file = open('../pickles/test_HDFC.pkl','rb')
+    dic = pickle.load(file)
+    correct = 0
+    total = len(dic)
+
+    for ls in dic:
+        '''
         txt = raw_input("Enter a text for classification: ")
         if txt == "__Q__":
             break
-        result = clf.classify(txt)
-        print result
+        '''
+        tmp = {"compliment":0, "displeasure":0, "miscellaneous":0}
+        for w in ls[0].split():
+            result = clf.classify(w)[1]
+            for key in result.keys():
+                tmp[key] += result[key]
+
+        key = max(tmp, key=tmp.get)
+        if key == ls[1]:
+            correct += 1
+    print correct, total
