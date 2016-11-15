@@ -14,7 +14,9 @@ def filter_out(line):
 lines = []
 with open("FinalTweetList.csv", "r") as f:
     lines = f.readlines()
+    sentiment = ['displeasure', 'compliment', 'miscellaneous']
     lines = [line.strip() for line in lines if len(line.split(",")) == 2 and "@" in list(line)]
+    lines = [line for line in lines if line.split(",")[1].lower() in sentiment]
 
 tag_to_name = {
         '@TheOfficialSBI':'SBI',
@@ -57,3 +59,5 @@ with open("pickles/train.pkl", "wb") as f:
 for k,v in test.items():
     with open('pickles/test_'+k+'.pkl', 'wb') as f:
         pickle.dump(v, f)
+        
+print(len(train))
