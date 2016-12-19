@@ -54,7 +54,7 @@ def lossFun(phrase, target, hprev):
 
         # The candidate, which is computed and used as described above.
         cbars[t] = np.dot(Wc, xs[t]) + np.dot(Uc, np.multiply(rs[t] , hs[t-1])) + bc
-        cs[t] = sigmoid(cbars[t])
+        cs[t] = np.tanh(cbars[t])
 
         ones = np.ones_like(zs[t])
         hs[t] = np.multiply(cs[t],zs[t]) + np.multiply(hs[t-1],ones - zs[t])

@@ -103,7 +103,7 @@ if __name__ == '__main__':
 			mem += dparam * dparam
 			param += -learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
 
-  
+
   parameter_dict = {}
   parameter_dict['hprev'] = hprev
   parameter_dict['Why'] = Why
