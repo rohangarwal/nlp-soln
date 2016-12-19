@@ -61,7 +61,7 @@ def lossFun(phrase, target, hprev):
 
 
 if __name__ == '__main__':
-  data = pickle.load(open('../data.pkl','rb'))
+  data = pickle.load(open('../word2vec/train_lines_vector.pkl','rb'))
 
   # Initializing model parameters
   mWxh, mWhh, mWhy = np.zeros_like(Wxh), np.zeros_like(Whh), np.zeros_like(Why)

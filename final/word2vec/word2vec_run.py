@@ -4,7 +4,7 @@ if __name__ == "__main__":
 
 	model = gensim.models.Word2Vec.load('w2vmodel')
 	
-	filename = '../dataset/pickles/train_lines.pkl'
+	filename = '../dataset/pickles/test_lines.pkl'
 	data = pickle.load(open(filename,'rb'))
 	all_vec = list()
 	for line in data:

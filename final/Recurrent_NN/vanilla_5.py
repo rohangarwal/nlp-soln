@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 
 # hyperparameters
-hidden_size = 32 # size of hidden layer of neurons
+hidden_size = 8 # size of hidden layer of neurons
 learning_rate = 1e-1
 vector_len = 32
 outputs = 5 #No of dimensions of output
@@ -61,7 +61,7 @@ def lossFun(phrase, target, hprev):
 
 
 if __name__ == '__main__':
-  data = pickle.load(open('../data.pkl','rb'))
+  data = pickle.load(open('../word2vec/train_lines_vector.pkl','rb'))
 
   # Initializing model parameters
   mWxh, mWhh, mWhy = np.zeros_like(Wxh), np.zeros_like(Whh), np.zeros_like(Why)
@@ -70,15 +70,20 @@ if __name__ == '__main__':
 
   #each row has words and then its sentiment
   for row in data:
-    if row[1] == "0": #big pos
+    if str(row[1]) == "0": #big pos
+        print '1'
         target = np.matrix('1;0;0;0;0')
-    elif row[1] == "1": #neu
+    elif str(row[1]) == "1": #neu
+        print '2'
         target = np.matrix('0;1;0;0;0')
-    elif row[1] == "2": #neu
+    elif str(row[1]) == "2": #neu
+        print '3'
         target = np.matrix('0;0;1;0;0')
-    elif row[1] == "3": #neg
+    elif str(row[1]) == "3": #neg
+        print '4'
         target = np.matrix('0;0;0;1;0')
     else: #big neg
+        print '5'
         target = np.matrix('0;0;0;0;1')
 
     seq_length = len(row[0])
