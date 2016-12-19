@@ -1,6 +1,6 @@
+from __future__ import division
 import pickle, sys
 import numpy as np
-from __future__ import division
 
 def fwd(phrase,hprev):
     vector_length = 32
@@ -21,11 +21,12 @@ def test(phrase,hprev):
     return str(np.argmax(ps))
 
 if __name__ == "__main__":
-    phrases = pickle.load(open(sys.argv[-1],"rb")) #Enter testing file
+    phrases = pickle.load(open(sys.argv[1],"rb")) #Enter testing file
 
     parameter_dict = {}
-    fp = open(sys.argv[0],'rb') # Enter model to be loaded
+    fp = open(sys.argv[2],'rb') # Enter model to be loaded
     parameter_dict = pickle.load(fp)
+    print 'here'
     hprev = parameter_dict['hprev']
     Why = parameter_dict['Why']
     by = parameter_dict['by']
@@ -36,7 +37,7 @@ if __name__ == "__main__":
 
     Rite = 0
     for phrase in phrases:
-        if test(phrase[0],hprev) == phrase[1]:
+        if test(phrase[0],hprev) == str(phrase[1]):
             Rite += 1
-
-    print 'Accuracy - ' round(Rite/len(phrases),2)
+    print Rite
+    print 'Accuracy - ', round(Rite/len(phrases),2)
