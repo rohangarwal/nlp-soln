@@ -46,6 +46,7 @@ if __name__ == "__main__":
     TP = 0
     FP = 0
     for review in negreviews:
+        print test(review,hprev)
         if test(review,hprev) == str(0):
             FP += 1
         else:
