@@ -8,3 +8,5 @@ RNN -> (i) -> many2one.py -> Trains the RNN Model.
 create_datafiles.py -> It creates datafiles for MaxEnt
 
 POS_tag.py -> Text Segmentation and Tagging
+
+MaxEnt/bank_tweets.py - client code for MaxEnt
