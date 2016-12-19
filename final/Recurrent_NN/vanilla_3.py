@@ -14,6 +14,9 @@ Why = np.random.randn(outputs, hidden_size)*0.01 # hidden to output
 bh = np.zeros((hidden_size, 1)) # hidden bias
 by = np.zeros((outputs, 1)) # output bias
 
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
 def lossFun(phrase, target, hprev):
   """
   inputs,target are both list of integers.

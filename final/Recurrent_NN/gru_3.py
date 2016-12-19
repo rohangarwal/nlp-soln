@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 
 # hyperparameters
-hidden_size = 32 # size of hidden layer of neurons
+hidden_size = 64 # size of hidden layer of neurons
 learning_rate = 1e-1
 vector_len = 32
 outputs = 5 #No of dimensions of output
@@ -54,7 +54,7 @@ def lossFun(phrase, target, hprev):
 
         # The candidate, which is computed and used as described above.
         cbars[t] = np.dot(Wc, xs[t]) + np.dot(Uc, np.multiply(rs[t] , hs[t-1])) + bc
-        cs[t] = np.tanh(cbars[t])
+        cs[t] = sigmoid(cbars[t])
 
         ones = np.ones_like(zs[t])
         hs[t] = np.multiply(cs[t],zs[t]) + np.multiply(hs[t-1],ones - zs[t])

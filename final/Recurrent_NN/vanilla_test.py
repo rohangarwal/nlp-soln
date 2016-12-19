@@ -21,12 +21,11 @@ def test(phrase,hprev):
     return str(np.argmax(ps))
 
 if __name__ == "__main__":
-    phrases = pickle.load(open(sys.argv[1],"rb")) #Enter testing file
+    phrases = pickle.load(open('../word2vec/test_lines_vector.pkl',"rb")) #Enter testing file
+    fp = open('vanilla5_model.pkl','rb') # Enter model to be loaded
 
     parameter_dict = {}
-    fp = open(sys.argv[2],'rb') # Enter model to be loaded
     parameter_dict = pickle.load(fp)
-    print 'here'
     hprev = parameter_dict['hprev']
     Why = parameter_dict['Why']
     by = parameter_dict['by']
@@ -37,7 +36,9 @@ if __name__ == "__main__":
 
     Rite = 0
     for phrase in phrases:
-        if test(phrase[0],hprev) == str(phrase[1]):
+        temp = test(phrase[0],hprev)
+        print temp
+        if temp == str(phrase[1]):
             Rite += 1
     print Rite
     print 'Accuracy - ', round(Rite/len(phrases),2)

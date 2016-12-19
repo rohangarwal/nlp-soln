@@ -14,6 +14,9 @@ Why = np.random.randn(outputs, hidden_size)*0.01 # hidden to output
 bh = np.zeros((hidden_size, 1)) # hidden bias
 by = np.zeros((outputs, 1)) # output bias
 
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
 def lossFun(phrase, target, hprev):
   """
   inputs,target are both list of integers.
@@ -31,7 +34,7 @@ def lossFun(phrase, target, hprev):
     #Copying entire vector for each word
     for j in range(32):
       xs[t][j] = phrase[t][j] #Using tanh, **Modify Here**
-    hs[t] = np.tanh(np.dot(Wxh, xs[t]) + np.dot(Whh, hs[t-1]) + bh) # hidden state
+    hs[t] = sigmoid(np.dot(Wxh, xs[t]) + np.dot(Whh, hs[t-1]) + bh) # hidden state
 
   #Many 2 one
   last = len(phrase) - 1  # Getting only last hidden state
@@ -70,20 +73,15 @@ if __name__ == '__main__':
 
   #each row has words and then its sentiment
   for row in data:
-    if str(row[1]) == "0": #big pos
-        print '1'
+    if str(row[1]) == "0":
         target = np.matrix('1;0;0;0;0')
-    elif str(row[1]) == "1": #neu
-        print '2'
+    elif str(row[1]) == "1":
         target = np.matrix('0;1;0;0;0')
-    elif str(row[1]) == "2": #neu
-        print '3'
+    elif str(row[1]) == "2":
         target = np.matrix('0;0;1;0;0')
-    elif str(row[1]) == "3": #neg
-        print '4'
+    elif str(row[1]) == "3":
         target = np.matrix('0;0;0;1;0')
-    else: #big neg
-        print '5'
+    else:
         target = np.matrix('0;0;0;0;1')
 
     seq_length = len(row[0])
