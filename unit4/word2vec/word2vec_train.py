@@ -11,13 +11,13 @@ class MySentences(object):
 
 if __name__ == "__main__":
 	
-	filename = '../pickles/train.pkl' #train word2vec
+	filename = '../pickles/new_pickle.pkl' #train word2vec
 	#sentences = MySentences(filename) # a memory-friendly iterator
 	
 	sentences = list()
 	datapkl = pickle.load(open(filename,'rb'))
 	for i in datapkl:
-		sentences.append([word for word in i[0].split()])
+		sentences.append([i[0].strip()])
 		#sentences.append(i[0].decode('utf-8'))
 	#for i in sentences:
 	#	print i
