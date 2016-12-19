@@ -12,17 +12,19 @@ def filter_out(line):
     line = ':'.join(tmp[:-1])
     line = ' '.join([x for x in line.split() if x.decode('utf-8') not in stoplist])
     line = ''.join([x.lower() for x in line if x not in exclude and not x.isdigit()])
-    return [line, label]
+    return [line.strip(), label]
 
 train_lines = []
 with open("train_lines.txt", "r") as f:
     lines = f.readlines()
     train_lines = [filter_out(line.strip()) for line in lines]
+    train_lines = [x for x in train_lines if x[0]]
     
 test_lines = []
 with open("test_lines.txt", "r") as f:
     lines = f.readlines()
     test_lines = [filter_out(line.strip()) for line in lines]
+    test_lines = [x for x in test_lines if x[0]]
         
 with open("pickles/train.pkl", "wb") as f:
     pickle.dump(train_lines, f)
