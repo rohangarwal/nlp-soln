@@ -26,10 +26,10 @@ with open("test_lines.txt", "r") as f:
     test_lines = [filter_out(line.strip()) for line in lines]
     test_lines = [x for x in test_lines if x[0]]
         
-with open("pickles/train.pkl", "wb") as f:
+with open("pickles/train_lines.pkl", "wb") as f:
     pickle.dump(train_lines, f)
     
-with open("pickles/test.pkl", "wb") as f:
+with open("pickles/test_lines.pkl", "wb") as f:
     pickle.dump(test_lines, f)
         
 print('Train : ',len(train_lines), "Test :", len(test_lines))
