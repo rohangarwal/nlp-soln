@@ -12,6 +12,7 @@ def filter_out(line):
     line = ':'.join(tmp[:-1])
     line = ' '.join([x for x in line.split() if x.decode('utf-8') not in stoplist])
     line = ''.join([x.lower() for x in line if x not in exclude and not x.isdigit()])
+    line = ' '.join([x for x in line.split(' ') if len(x) > 1])
     return [line.strip(), label]
 
 train_lines = []
