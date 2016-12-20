@@ -2,9 +2,9 @@ import numpy as np
 import pickle
 
 # hyperparameters
-hidden_size = 8 # size of hidden layer of neurons
+hidden_size = 16 # size of hidden layer of neurons
 learning_rate = 1e-1
-vector_len = 32
+vector_len = 50
 outputs = 5 #No of dimensions of output
 
 # model parameters
@@ -64,40 +64,67 @@ def lossFun(phrase, target, hprev):
 
 
 if __name__ == '__main__':
-  data = pickle.load(open('../word2vec/train_lines_vector.pkl','rb'))
-
+  data_old = pickle.load(open('../word2vec/special_train_lines_vector2.pkl','rb'))
+  
+  zero,one,two,three,four = list(),list(),list(),list(),list()
+  for i in data_old:
+    if str(i[1]) == '0':
+      zero.append(i)
+    elif str(i[1]) == '1':
+      one.append(i)
+    elif str(i[1]) == '2':
+      two.append(i)
+    elif str(i[1]) == '3':
+      three.append(i)
+    elif str(i[1]) == '4':
+      four.append(i)
+  min_count = min(len(zero),len(one),len(two),len(three),len(four))
+  print 'min_count = ' + str(min_count)
+  data_new = list()
+  for i in range(0,min_count):
+    data_new.append(zero[i])
+    data_new.append(one[i])
+    data_new.append(two[i])
+    data_new.append(three[i])
+    data_new.append(four[i])
+    
+  epochs = 10
   # Initializing model parameters
   mWxh, mWhh, mWhy = np.zeros_like(Wxh), np.zeros_like(Whh), np.zeros_like(Why)
   mbh, mby = np.zeros_like(bh), np.zeros_like(by)
-  hprev = np.zeros((hidden_size,1))
+  
+  for epoch in range(0,epochs):
+    print 'epoch #:' + str(epoch)
+    #each row has words and then its sentiment
+    hprev = np.zeros((hidden_size,1))
+    for row in data_new:
+      if str(row[1]) == "0":
+          target = np.matrix('1;0;0;0;0')
+      elif str(row[1]) == "1":
+          target = np.matrix('0;1;0;0;0')
+      elif str(row[1]) == "2":
+          target = np.matrix('0;0;1;0;0')
+      elif str(row[1]) == "3":
+          target = np.matrix('0;0;0;1;0')
+      else:
+          target = np.matrix('0;0;0;0;1')
 
-  #each row has words and then its sentiment
-  for row in data:
-    if str(row[1]) == "0":
-        target = np.matrix('1;0;0;0;0')
-    elif str(row[1]) == "1":
-        target = np.matrix('0;1;0;0;0')
-    elif str(row[1]) == "2":
-        target = np.matrix('0;0;1;0;0')
-    elif str(row[1]) == "3":
-        target = np.matrix('0;0;0;1;0')
-    else:
-        target = np.matrix('0;0;0;0;1')
+      seq_length = len(row[0])
+      smooth_loss = -np.log(1.0/vector_len)*seq_length # loss at iteration 0
 
-    seq_length = len(row[0])
-    smooth_loss = -np.log(1.0/vector_len)*seq_length # loss at iteration 0
+      # forward seq_length characters through the net and fetch gradient
+      if row[0]:
+          loss, dWxh, dWhh, dWhy, dbh, dby, hprev = lossFun(row[0], target, hprev)
+          smooth_loss = smooth_loss * 0.999 + loss * 0.001
 
-    # forward seq_length characters through the net and fetch gradient
-    if row[0]:
-        loss, dWxh, dWhh, dWhy, dbh, dby, hprev = lossFun(row[0], target, hprev)
-        smooth_loss = smooth_loss * 0.999 + loss * 0.001
-
-        # perform parameter update with Adagrad
-        for param, dparam, mem in zip([Wxh, Whh, Why, bh, by],
-                                        [dWxh, dWhh, dWhy, dbh, dby],
-                                        [mWxh, mWhh, mWhy, mbh, mby]):
-            mem += dparam * dparam
-            param += -learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
+          # perform parameter update with Adagrad
+          for param, dparam, mem in zip([Wxh, Whh, Why, bh, by],
+                                          [dWxh, dWhh, dWhy, dbh, dby],
+                                          [mWxh, mWhh, mWhy, mbh, mby]):
+              mem += dparam * dparam
+              param += -learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
+    print 'loss = ' + str(loss)          
+    
 
 
   parameter_dict = {}

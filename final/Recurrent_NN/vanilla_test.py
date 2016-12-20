@@ -3,7 +3,7 @@ import pickle, sys
 import numpy as np
 
 def fwd(phrase,hprev):
-    vector_length = 32
+    vector_length = 50
     xs = {}
     hs = {}
     hs[-1] = hprev
