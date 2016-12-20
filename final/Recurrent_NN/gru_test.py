@@ -2,10 +2,15 @@ from __future__ import division
 import pickle, sys
 import numpy as np
 
+hprev, Why, Wc, Wr = {}, {}, {}, {}
+Wz, Uc, Ur, Uz = {}, {}, {}, {}
+by, bc, br, bz = {}, {}, {}, {}
+
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
-def fwd(phrase,hprev):
+def fwd(phrase):
+    global hprev, Why, Wc, Wr, Wz, Uc, Ur, Uz, by, bc, br, bz
     vector_len = 32
     xs, hs, ys, ps = {}, {}, {}, {}
     rs, zs, cs = {}, {}, {}
@@ -37,16 +42,16 @@ def fwd(phrase,hprev):
     last = len(phrase) - 1
     return hs[last]
 
-def test(phrase,hprev):
-    hs = fwd(phrase,hprev)
+def test(phrase):
+    global hprev, Why, Wc, Wr, Wz, Uc, Ur, Uz, by, bc, br, bz
+    hs = fwd(phrase)
     ys = np.dot(Why, hs) + by
     ps = np.exp(ys) / np.sum(np.exp(ys))
     return np.argmax(ps)
 
-if __name__ == "__main__":
-
-    phrases = pickle.load(open('../word2vec/test_lines_vector.pkl',"rb"))
-    fp = open('gru3_model.pkl','rb') # Enter model to be loaded
+def load(model):
+    global hprev, Why, Wc, Wr, Wz, Uc, Ur, Uz, by, bc, br, bz
+    fp = open(model,'rb')
 
     parameter_dict = {}
     parameter_dict = pickle.load(fp)
@@ -66,11 +71,18 @@ if __name__ == "__main__":
     bz = parameter_dict['bz']
     fp.close()
 
+def sentiment(sentence,model):
+    load(model)
+    return test(sentence)
+
+def client(test_file,model):
+    load(model)
+    phrases = pickle.load(open(test_file,"rb"))
     Rite = 0
     for phrase in phrases:
-        temp = test(phrase[0],hprev)
+        temp = test(phrase[0])
         print temp
-        if temp == phrase[1]:
+        if temp == str(phrase[1]):
             Rite += 1
     print Rite
     print 'Accuracy - ', round(Rite/len(phrases),2)

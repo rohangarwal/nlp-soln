@@ -2,8 +2,12 @@ from __future__ import division
 import pickle, sys
 import numpy as np
 
-def fwd(phrase,hprev):
-    vector_length = 32
+hprev, Why, by = {}, {}, {}
+Wxh, bh, Whh = {}, {}, {}
+
+def fwd(phrase):
+    global hprev, Why, by, Wxh, bh, Whh
+    vector_length = 50
     xs = {}
     hs = {}
     hs[-1] = hprev
@@ -14,16 +18,16 @@ def fwd(phrase,hprev):
         hs[t] = np.tanh(np.dot(Wxh, xs[t]) + np.dot(Whh, hs[t-1]) + bh) # hidden state
     return hs[(len(phrase)-1)]
 
-def test(phrase,hprev):
-    hs = fwd(phrase,hprev)
+def test(phrase):
+    global hprev, Why, by, Wxh, bh, Whh
+    hs = fwd(phrase)
     ys = np.dot(Why, hs) + by
     ps = np.exp(ys) / np.sum(np.exp(ys))
     return str(np.argmax(ps))
 
-if __name__ == "__main__":
-    phrases = pickle.load(open('../word2vec/test_lines_vector.pkl',"rb")) #Enter testing file
-    fp = open('vanilla5_model.pkl','rb') # Enter model to be loaded
-
+def load(model):
+    global hprev, Why, by, Wxh, bh, Whh
+    fp = open(model,'rb')
     parameter_dict = {}
     parameter_dict = pickle.load(fp)
     hprev = parameter_dict['hprev']
@@ -34,9 +38,16 @@ if __name__ == "__main__":
     bh = parameter_dict['bh']
     fp.close()
 
+def sentiment(sentence,model):
+    load(model)
+    return test(sentence)
+
+def client(test_file,model):
+    load(model)
+    phrases = pickle.load(open(test_file,"rb"))
     Rite = 0
     for phrase in phrases:
-        temp = test(phrase[0],hprev)
+        temp = test(phrase[0])
         print temp
         if temp == str(phrase[1]):
             Rite += 1

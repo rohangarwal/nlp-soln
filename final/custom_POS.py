@@ -5,18 +5,6 @@ import sys
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
-
-def Preprocess(t):
-    '''
-        Everything reduced to lower case for ease of processing
-    '''
-    t = t.lower()
-
-    # Specific case to remove <'> so as to tag properly
-    t = t.replace('\'','')
-
-    return t
-
 def Postag(t):
     '''
         Text Segmentation and Tagging
@@ -50,7 +38,6 @@ def Treeparse(tree):
     '''
     foods = []
     for subtree in tree.subtrees():
-        print subtree
         if subtree.label() == 'sentiment':
             foods.append(' '.join([str(child[0]) for child in subtree]))
 
