@@ -11,8 +11,9 @@ if __name__ == "__main__":
 		vec = list()
 		for word in line[0].split():
 			if word in model.vocab:
-				vec.append(model[word])
+				vec.append(model[word])		
 		if vec:
+			print vec
 			all_vec.append([vec,line[1]])
 
 	print len(all_vec)
