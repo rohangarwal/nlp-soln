@@ -1,0 +1,3 @@
+Run Word_vec.py It will give you all the pickle files
+Run RNN.py It will give you the req output
+Online_Word_2_vec.py gives the vector representation for the word of the sir's code
