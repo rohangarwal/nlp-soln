@@ -1,8 +1,9 @@
 from custom_POS import *
+import sys
 
 if __name__ == "__main__":
-    filename = 'train_lines.txt'
-    filename2 = 'special_train_lines2.txt'
+    filename = sys.argv[1]
+    filename2 = sys.srgv[2]
     fp = open(filename2, "w")
 
     for line in open(filename,'r').readlines():
