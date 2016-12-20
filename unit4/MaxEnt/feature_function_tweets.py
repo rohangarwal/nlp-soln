@@ -7,9 +7,9 @@ Conventions for writing feature functions:
 e.g. fsports_1(x, y)
 
 '''
-import sys
+import sys, os
 import pickle
-sys.path.append('/home/Work/Git/nlp-soln/unit4/MaxEnt')
+sys.path.append(os.path.join(os.path.dirname(__file__)))
 from nltk import sent_tokenize, word_tokenize
 from classifiers.feature_functions_base import FeatureFunctionsBase
 
@@ -28,7 +28,7 @@ class WikiFeatureFunctions(FeatureFunctionsBase):
                     val.append(v)
                     self.fdict[tag] = val
         self.supported_tags = self.fdict.keys()
-        feature_vec = pickle.load(open("../pickles/featurewords2.pkl" , "rb"))
+        feature_vec = pickle.load(open(os.path.join(os.path.dirname(__file__))+"/../pickles/featurewords2.pkl" , "rb"))
         for i,j in feature_vec.items():
             if i == "displeasure":
                 self.disp = list(j)
