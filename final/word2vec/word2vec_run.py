@@ -1,7 +1,7 @@
 import gensim, pickle, random, os
 
 def get_vectors(phrase):
-    model = gensim.models.Word2Vec.load('/home/ksameersrk/Documents/nlp-soln/final/word2vec/w2vmodel')
+    model = gensim.models.Word2Vec.load(os.path.join(os.path.dirname(__file__)+'/w2vmodel')
     vec = []
     for word in phrase.split():
         if word in model.vocab:
