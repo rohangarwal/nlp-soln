@@ -5,7 +5,7 @@ import pickle, sys
 hidden_size = 64 # size of hidden layer of neurons
 learning_rate = 1e-1
 vector_len = 32
-outputs = 3 #No of dimensions of output
+outputs = 5 #No of dimensions of output
 
 # model parameters
 Wr = np.random.randn(hidden_size, vector_len)*0.01
@@ -175,7 +175,7 @@ if __name__ == '__main__':
       three.append(i)
     elif str(i[1]) == '4':
       four.append(i)
-      
+
   min_count = min(len(zero),len(one),len(two),len(three),len(four))
   print 'min_count = ' + str(min_count)
   data_new = list()
@@ -201,11 +201,15 @@ if __name__ == '__main__':
     #each row has words and then its sentiment
     for row in data_new:
       if row[1] == 0:
-        target = np.matrix('1;0;0')
+        target = np.matrix('1;0;0;0;0')
       elif row[1] == 1:
-        target = np.matrix('0;1;0')
+        target = np.matrix('0;1;0;0;0')
+      elif row[1] == 2:
+        target = np.matrix('0;0;1;0;0')
+      elif row[1] == 3:
+        target = np.matrix('0;0;0;1;0')
       else:
-        target = np.matrix('0;0;1')
+        target = np.matrix('0;0;0;0;1')
 
       seq_length = len(row[0])
       smooth_loss = -np.log(1.0/vector_len)*seq_length # loss at iteration 0

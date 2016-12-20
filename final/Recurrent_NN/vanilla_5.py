@@ -1,5 +1,5 @@
 import numpy as np
-import pickle
+import pickle, sys
 
 # hyperparameters
 hidden_size = 16 # size of hidden layer of neurons
@@ -64,8 +64,9 @@ def lossFun(phrase, target, hprev):
 
 
 if __name__ == '__main__':
-  data_old = pickle.load(open('../word2vec/special_train_lines_vector2.pkl','rb'))
-  
+  f_input = '../word2vec' + sys.argv[1]
+  data_old = pickle.load(open(f_input,'rb'))
+  f_output = sys.argv[2]
   zero,one,two,three,four = list(),list(),list(),list(),list()
   for i in data_old:
     if str(i[1]) == '0':
@@ -88,7 +89,7 @@ if __name__ == '__main__':
     data_new.append(three[i])
     data_new.append(four[i])
     
-  epochs = 10
+  epochs = 1
   # Initializing model parameters
   mWxh, mWhh, mWhy = np.zeros_like(Wxh), np.zeros_like(Whh), np.zeros_like(Why)
   mbh, mby = np.zeros_like(bh), np.zeros_like(by)
@@ -135,6 +136,6 @@ if __name__ == '__main__':
   parameter_dict['Whh'] = Whh
   parameter_dict['bh'] = bh
 
-  fi = open("vanilla5_model.pkl", "wb")
+  fi = open("models/"+f_output, "wb")
   pickle.dump(parameter_dict,fi)
   fi.close()
