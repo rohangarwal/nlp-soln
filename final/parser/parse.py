@@ -4,12 +4,15 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'word2vec'))
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'Recurrent_NN'))
 import word2vec_run
 import vanilla_test
+import gru_test
 import nltk
 
 def get_sentiment(phrase):
     vectors = word2vec_run.get_vectors(phrase)
     if vectors:
-        return "Sentiment is Coming!"
+        # return vectors
+        # return gru_test.sentiment(vectors, '/home/ksameersrk/Documents/nlp-soln/final/Recurrent_NN/gru3_model.pkl')
+        return vanilla_test.sentiment(vectors, '/home/ksameersrk/Documents/nlp-soln/final/Recurrent_NN/vanilla5_model.pkl')
     else:
         return "Word Vector is not available"
 
