@@ -1,5 +1,13 @@
 import gensim, pickle, random, os
 
+def get_vectors(phrase):
+    model = gensim.models.Word2Vec.load('/home/ksameersrk/Documents/nlp-soln/final/word2vec/w2vmodel')
+    vec = []
+    for word in phrase.split():
+        if word in model.vocab:
+            vec.append(model[word])
+    return vec
+
 if __name__ == "__main__":
 
 	model = gensim.models.Word2Vec.load('w2vmodel')

@@ -1,11 +1,20 @@
 from stat_parser import Parser, display_tree
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'word2vec'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'Recurrent_NN'))
+import word2vec_run
+import vanilla_test
 import nltk
 
 def get_sentiment(phrase):
-    return "NA"
+    vectors = word2vec_run.get_vectors(phrase)
+    if vectors:
+        return "Sentiment is Coming!"
+    else:
+        return "Word Vector is not available"
 
 def printTree(node):
-    print "ROOT:\n\tLabel :", node.label(), "Text :", ' '.join(node.leaves()), "\n\tSentiment :", get_sentiment(' '.join(node.leaves()))
+    print "ROOT:\n\tLabel :", node.label(), "\n\tText :", ' '.join(node.leaves()), "\n\tSentiment :", get_sentiment(' '.join(node.leaves()))
     getNodes(node)
     print '\n\n'
 
