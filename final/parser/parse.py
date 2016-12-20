@@ -11,8 +11,8 @@ def get_sentiment(phrase):
     vectors = word2vec_run.get_vectors(phrase)
     if vectors:
         # return vectors
-        # return gru_test.sentiment(vectors, '/home/ksameersrk/Documents/nlp-soln/final/Recurrent_NN/gru3_model.pkl')
-        return vanilla_test.sentiment(vectors, '/home/ksameersrk/Documents/nlp-soln/final/Recurrent_NN/vanilla5_model.pkl')
+        return gru_test.sentiment(vectors, os.path.join(os.path.dirname(__file__), '..', 'Recurrent_NN', 'gru3_model.pkl'))
+        # return vanilla_test.sentiment(vectors, os.path.join(os.path.dirname(__file__), '..', 'Recurrent_NN', 'vanilla5_model.pkl'))
     else:
         return "Word Vector is not available"
 
@@ -36,7 +36,6 @@ parser = Parser()
 
 # printTree(tree)
 # tree.pretty_print()
-
 
 while True:
     text = raw_input("Enter the sentence : ")
