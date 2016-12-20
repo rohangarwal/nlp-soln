@@ -163,28 +163,22 @@ if __name__ == '__main__':
   data_old = pickle.load(open(f_input,'rb'))
   f_output = sys.argv[2]
 
-  zero,one,two,three,four = list(),list(),list(),list(),list()
+  zero,one,two = list(),list(),list()
   for i in data_old:
-    if str(i[1]) == '0':
+    if str(i[1]) == '0' or str(i[1]) == '1':
       zero.append(i)
-    elif str(i[1]) == '1':
-      one.append(i)
     elif str(i[1]) == '2':
+      one.append(i)
+    elif str(i[1]) == '3' or str(i[1]) == '4':
       two.append(i)
-    elif str(i[1]) == '3':
-      three.append(i)
-    elif str(i[1]) == '4':
-      four.append(i)
       
-  min_count = min(len(zero),len(one),len(two),len(three),len(four))
+  min_count = min(len(zero),len(one),len(two))
   print 'min_count = ' + str(min_count)
   data_new = list()
   for i in range(0,min_count):
     data_new.append(zero[i])
     data_new.append(one[i])
     data_new.append(two[i])
-    data_new.append(three[i])
-    data_new.append(four[i])
   
   epochs = 10
 
@@ -200,9 +194,10 @@ if __name__ == '__main__':
     print 'epoch #:' + str(epoch)
     #each row has words and then its sentiment
     for row in data_new:
-      if row[1] == 0:
+      row[1] = str(row[1])
+      if row[1] == '0' or row[1] == '1':
         target = np.matrix('1;0;0')
-      elif row[1] == 1:
+      elif row[1] == '2':
         target = np.matrix('0;1;0')
       else:
         target = np.matrix('0;0;1')

@@ -46,10 +46,20 @@ def client(test_file,model):
     load(model)
     phrases = pickle.load(open(test_file,"rb"))
     Rite = 0
+    m = {'0':['0','1'], '1':['2'], '2':['3','4']}
     for phrase in phrases:
-        temp = test(phrase[0])
+        temp = str(test(phrase[0]))
         print temp
-        if temp == str(phrase[1]):
-            Rite += 1
+        if option == '3':
+            if temp in m[temp]:
+                Rite += 1
+        else:
+            if str(temp) == str(phrase[1]):
+                Rite += 1
+            
     print Rite
     print 'Accuracy - ', round(Rite/len(phrases),2)
+    
+if __name__ == '__main__':
+    test_file, model, option = sys.argv[1:4]
+    client(test_file, model)

@@ -12,20 +12,21 @@ if __name__ == "__main__":
 
 	model = gensim.models.Word2Vec.load('w2vmodel')
 	
-	filename = '../dataset/pickles/special_train_lines2.pkl'
+	filename = '../dataset/pickles/test_phrases.pkl'
 	data = pickle.load(open(filename,'rb'))
-	print len(data)
 	all_vec = list()
+	count = 0
 	for line in data:
 		vec = list()
 		for word in line[0].split():
 			if word in model.vocab:
 				vec.append(model[word])
 			else :
-				print word	
+			    count += 1
+			    print word	
 		if vec:
 			all_vec.append([vec,line[1]])
 
-	print len(all_vec)
-	with open('special_train_lines_vector2.pkl','wb') as f:
+	print 'Not Found Words - ', count
+	with open('test_phrases_vector.pkl','wb') as f:
 		pickle.dump(all_vec,f)

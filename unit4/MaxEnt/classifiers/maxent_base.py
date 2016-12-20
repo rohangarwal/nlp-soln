@@ -68,7 +68,7 @@ class LogLinear(object):
         return self.func.evaluate(xi, tag)
 
     def cb(self, params):
-        print "cb count = ", self.cb_count
+        # print "cb count = ", self.cb_count
         self.cb_count += 1
         return
 
@@ -86,17 +86,17 @@ class LogLinear(object):
         if (self.model == None) or (self.model.shape[0] != self.dim):
             self.model = numpy.array([0 for _ in range(self.dim)]) # initialize the model to all 0
         dt1 = datetime.datetime.now()
-        print 'before training: ', dt1
+        # print 'before training: ', dt1
         try:
             params = mymin(self.cost, self.model, method = 'L-BFGS-B', callback = self.cb, options = {'maxiter':max_iter}) #, jac = self.gradient) # , options = {'maxiter':100}
         except:
-            print "Importing alternate minimizer fmin_l_bfgs_b"
+            # print "Importing alternate minimizer fmin_l_bfgs_b"
             from scipy.optimize import fmin_l_bfgs_b as mymin
             params = mymin(self.cost, self.model, fprime = self.gradient) # , options = {'maxiter':100}
-            print "Min Point is: ", params[1]
+            # print "Min Point is: ", params[1]
         #self.model = params.x
         dt2 = datetime.datetime.now()
-        print 'after training: ', dt2, '  total time = ', (dt2 - dt1).total_seconds()
+        # print 'after training: ', dt2, '  total time = ', (dt2 - dt1).total_seconds()
         return self.cost_value
 
     #-------------------------- HYPOTHESIS FUNCTION P(Y|X) ---------------------------
@@ -159,11 +159,13 @@ class LogLinear(object):
                     try:
                         mysum += math.exp(dot_prod)
                     except:
-                        print "dot_prod = ", dot_prod, " tag = ", tag, " f = ", fx_yprime, " m = ", self.model
+                        pass
+                        # print "dot_prod = ", dot_prod, " tag = ", tag, " f = ", fx_yprime, " m = ", self.model
             expected += math.log(mysum)
 
         if (self.iteration % 20) == 0:
-            print "Iteration = ", self.iteration, "Cost = ", (expected - empirical + reg_term)
+            pass
+            # print "Iteration = ", self.iteration, "Cost = ", (expected - empirical + reg_term)
         self.iteration += 1
         self.cost_value = (expected - empirical + reg_term)
         return (expected - empirical + reg_term)
