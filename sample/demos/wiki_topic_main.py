@@ -4,7 +4,7 @@ Created on 23-Jul-2016
 @author: Anantharaman
 '''
 import sys
-sys.path.append('/home/ksameersrk/Documents/6thSem/NLP/nlp')
+sys.path.append('/home/sai/Desktop/nlp/nlp-soln/unit4')
 from feature_function_wiki_topics import WikiFeatureFunctions
 from classifiers.maxent_base import LogLinear
 import os

@@ -23,6 +23,7 @@ if __name__ == "__main__":
 	filename = '../dataset/pickles/test_phrases.pkl' #train word2vec
 	datapkl = pickle.load(open(filename,'rb'))
 	for i in datapkl:
+		print i
 		sentences.append([i[0].strip()])
 	
 	#train word2vec on test sentences also - check performance.
