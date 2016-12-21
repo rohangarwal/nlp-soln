@@ -48,12 +48,14 @@ def lossFun(phrase, target, hprev):
   dbh, dby = np.zeros_like(bh), np.zeros_like(by)
   dhnext = np.zeros_like(hs[0])
 
-  dy = np.subtract(ps,target) # backprop into y. see http://cs231n.github.io/neural-networks-case-study/#grad if confused here
+  #dy = np.subtract(ps,target) # backprop into y. see http://cs231n.github.io/neural-networks-case-study/#grad if confused here
+  dy = np.copy(ps)
+  dy[target] -= 1
   dWhy += np.dot(dy, hs[last].T)
   dby += dy
   dh = np.dot(Why.T, dy) + dhnext # backprop into h
   for t in reversed(range(len(phrase))):
-    dhraw = (1 - (hs[t] * hs[t].T)) * dh # backprop through tanh nonlinearity
+    dhraw = (1 - (hs[t] * hs[t])) * dh # backprop through tanh nonlinearity
     dbh += dhraw
     dWxh += np.dot(dhraw, xs[t].T)
     dWhh += np.dot(dhraw, hs[t-1].T)
