@@ -5,8 +5,8 @@ import pprint
 import pickle
 import dill
 
-def clip(v):
-		return v[:10]
+def clip_of_grads(v):
+    return v[:10]
 
 class RNN:
 	def __init__(self, input_size, hidden_size, output_size, learning_rate=0.01):
@@ -54,7 +54,7 @@ class RNN:
 	def forward2(self, x):
 	    return self.forward(x, np.zeros((self.hidden_size, 1)))
 
-	def backprop(self, xs, hs, ys, ps, targets, dy, do_dropout=False):
+	def backwards(self, xs, hs, ys, ps, targets, dy, do_dropout=False):
 		dWxh, dWhh, dWhy = np.zeros_like(self.Wxh), np.zeros_like(self.Whh), np.zeros_like(self.Why)
 		dbh, dby = np.zeros_like(self.bh), np.zeros_like(self.by)
 		dhnext = np.zeros_like(hs[-1])
@@ -71,7 +71,7 @@ class RNN:
 			dhnext = np.dot(self.Whh.T, dhraw)
 
 		for dparam in [dWxh, dWhh, dWhy, dbh, dby]:
-			np.clip(dparam, -5, 5, out=dparam) # clip to mitigate exploding gradients
+			np.clip_of_grads(dparam, -5, 5, out=dparam) # clip_of_grads to mitigate exploding gradients
 
 		return dWxh, dWhh, dWhy, dbh, dby, hs[len(xs) - 1]
 
@@ -89,7 +89,7 @@ class RNN:
 			print('epoch :  {}'.format(e + 1))
 
 			for x, y in zip(*training_data):
-				x = clip(x)
+				x = clip_of_grads(x)
 				hprev = np.zeros((self.hidden_size, 1))				
 				seq_length = len(x)
 				xs, hs, ys, ps = self.forward1(x, hprev, do_dropout)
@@ -112,15 +112,15 @@ class RNN:
 
 				self.mby += dby * dby
 				self.by += -self.learning_rate * dby / np.sqrt(self.mby + 1e-8) # adagrad update
-				dWxh, dWhh, dWhy, dbh, dby, hprev = self.backprop(xs, hs, ys, ps, y, dy, do_dropout)
+				dWxh, dWhh, dWhy, dbh, dby, hprev = self.backwards(xs, hs, ys, ps, y, dy, do_dropout)
 				self.hprev = hprev
 				self.update_params(dWxh, dWhh, dWhy, dbh, dby)
 
-			print("Accuracy: {:.2f}%".format(self.predict(validation_data) * 100))
+			print("Accuracy: {:.2f}%".format(self.get_stats(validation_data) * 100))
 
 		print("Training Completed")
 		
-	def predict(self, testing_data, test=False):            
+	def get_stats(self, testing_data, test=False):            
 		correct = 0
 		predictions = {x : 0 for x in range(TYPE)}
 		outputs = {x : 0 for x in range(TYPE)}
@@ -132,7 +132,7 @@ class RNN:
 		recall_den = {x : 0 for x in range(TYPE)}
 		
 		for x, y in zip(*testing_data):
-			x = clip(x)
+			x = clip_of_grads(x)
 			op = self.forward2(x)
 			tr = np.argmax(y)
 			predictions[op] += 1
@@ -241,6 +241,6 @@ if __name__ == "__main__":
 	else:
 		RNN = dill.load(open('rnn_object'+str(TYPE), 'rb'))
 
-	accuracy = RNN.predict((testing_inputs, testing_targets), True)
+	accuracy = RNN.get_stats((testing_inputs, testing_targets), True)
 
 	print("Accuracy: {:.2f}%".format(accuracy * 100))
