@@ -3,7 +3,7 @@ import sys
 import os
 import pprint
 import pickle
-import parser
+import dill
 
 def clip(v):
 		return v[:10]
@@ -120,11 +120,12 @@ class RNN:
 
 		print("Training Completed")
 		
-	def predict(self, testing_data, test=False):
+	def predict(self, testing_data, test=False):            
 		correct = 0
 		predictions = {x : 0 for x in range(TYPE)}
 		outputs = {x : 0 for x in range(TYPE)}
 		l = 0
+		TN, TP, FN, FP = 0, 0, 0, 0
 		for x, y in zip(*testing_data):
 			x = clip(x)
 			op = self.forward2(x)
@@ -164,7 +165,7 @@ if __name__ == "__main__":
 	OUTPUT_SIZE = TYPE
 	EPOCHS = 10
 	LEARNING_RATE = 0.20
-	TRAIN = True
+	TRAIN = False
 	
 	train = pickle.load(open('train_phrases_vector.pkl', 'rb'))
 	test = pickle.load(open('test_phrases_vector.pkl', 'rb'))
@@ -193,12 +194,14 @@ if __name__ == "__main__":
 		parameter_dict['Whh'] = RNN.Whh
 		parameter_dict['bh'] = RNN.bh
 
-		fi = open("rnn_model5.pkl", "wb")
+		fi = open("rnn_model"+str(TYPE)+".pkl", "wb")
 		pickle.dump(parameter_dict,fi)
 		fi.close()
+		
+		dill.dump(RNN, open("rnn_object"+str(TYPE), "wb"))
 	
 	else:
-		RNN = pickle.load(open('rnn_model.pkl5', 'rb'))
+		RNN = dill.load(open('rnn_object'+str(TYPE), 'rb'))
 
 	accuracy = RNN.predict((testing_inputs, testing_targets), True)
 
