@@ -126,6 +126,11 @@ class RNN:
 		outputs = {x : 0 for x in range(TYPE)}
 		l = 0
 		TN, TP, FN, FP = 0, 0, 0, 0
+		precision_num = {x : 0 for x in range(TYPE)}
+		precision_den = {x : 0 for x in range(TYPE)}
+		recall_num = {x : 0 for x in range(TYPE)}
+		recall_den = {x : 0 for x in range(TYPE)}
+		
 		for x, y in zip(*testing_data):
 			x = clip(x)
 			op = self.forward2(x)
@@ -134,9 +139,42 @@ class RNN:
 			outputs[tr] += 1
 			correct = correct + 1 if op == tr else correct + 0
 			l += 1
+			
+			#compute precision
+			if op == tr:
+			    precision_num[op] += 1
+			    precision_den[op] += 1
+			    
+			else :
+			    precision_den[op] += 1
+			
+			precision = []    
+			for i in range(0,len(precision_num)):
+			    if precision_den[i]:
+			        precision.append((precision_num[i]+0.0)/precision_den[i])        
+			
+			# compute recall
+			    
+			if op == tr:
+			    recall_num[tr] += 1
+			    recall_den[tr] += 1
+			    
+			else :
+			    recall_den[tr] += 1
+			    
+			recall = []
+			for i in range(0,len(recall_num)):
+			    if recall_den[i]:
+			        recall.append((recall_num[i]+0.0)/recall_den[i])        
+			        
+			    
+			    
 		if test:
 			print 'Targets :\t', outputs
 			print 'Predicated :\t', predictions
+			
+			print 'Precision : \t', precision
+			print 'Recall : \t' , recall
 		return (correct + 0.0) / l
 
 
@@ -165,7 +203,7 @@ if __name__ == "__main__":
 	OUTPUT_SIZE = TYPE
 	EPOCHS = 10
 	LEARNING_RATE = 0.20
-	TRAIN = False
+	TRAIN = True
 	
 	train = pickle.load(open('train_phrases_vector.pkl', 'rb'))
 	test = pickle.load(open('test_phrases_vector.pkl', 'rb'))
