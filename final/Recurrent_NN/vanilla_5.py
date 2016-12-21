@@ -48,12 +48,14 @@ def lossFun(phrase, target, hprev):
   dbh, dby = np.zeros_like(bh), np.zeros_like(by)
   dhnext = np.zeros_like(hs[0])
 
-  dy = np.subtract(ps,target) # backprop into y. see http://cs231n.github.io/neural-networks-case-study/#grad if confused here
+  #dy = np.subtract(ps,target) # backprop into y. see http://cs231n.github.io/neural-networks-case-study/#grad if confused here
+  dy = np.copy(ps)
+  dy[target] -= 1
   dWhy += np.dot(dy, hs[last].T)
   dby += dy
   dh = np.dot(Why.T, dy) + dhnext # backprop into h
   for t in reversed(range(len(phrase))):
-    dhraw = (1 - (hs[t] * hs[t].T)) * dh # backprop through tanh nonlinearity
+    dhraw = (1 - (hs[t] * hs[t])) * dh # backprop through tanh nonlinearity
     dbh += dhraw
     dWxh += np.dot(dhraw, xs[t].T)
     dWhh += np.dot(dhraw, hs[t-1].T)
@@ -88,12 +90,12 @@ if __name__ == '__main__':
     data_new.append(two[i])
     data_new.append(three[i])
     data_new.append(four[i])
-    
-  epochs = 10
+
+  epochs = 5
   # Initializing model parameters
   mWxh, mWhh, mWhy = np.zeros_like(Wxh), np.zeros_like(Whh), np.zeros_like(Why)
   mbh, mby = np.zeros_like(bh), np.zeros_like(by)
-  
+
   for epoch in range(0,epochs):
     print 'epoch #:' + str(epoch)
     #each row has words and then its sentiment
@@ -124,8 +126,8 @@ if __name__ == '__main__':
                                           [mWxh, mWhh, mWhy, mbh, mby]):
               mem += dparam * dparam
               param += -learning_rate * dparam / np.sqrt(mem + 1e-8) # adagrad update
-    print 'loss = ' + str(loss)          
-    
+    print 'loss = ' + str(loss)
+
 
 
   parameter_dict = {}
