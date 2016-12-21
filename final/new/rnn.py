@@ -1,14 +1,9 @@
 import numpy as np
-import csv
 import sys
+import os
 import pprint
-import dill
 import pickle
-
 import parser
-from preprocess import clean
-
-from gensim.models import Word2Vec
 
 def relu(z):
 	return z * (z > 0)
@@ -72,6 +67,8 @@ class RNN:
 		
 		for t in range(seq_length):
 			xs[t] = x[t].reshape(-1, 1)
+			print 'a', self.f(np.dot(self.Wxh, xs[t])
+			print 'Wxh_shape', self.Wxh.shape
 			hs[t] = self.f(np.dot(self.Wxh, xs[t]) + np.dot(self.Whh, hs[t-1]) + self.bh) 
 			#if(do_dropout):
 			#	hs[t] *= np.random.binomial(1, self.dropout_percent, size=hs[t-1].shape)
@@ -200,29 +197,6 @@ class RNN:
 			return (correct + 0.0) / l
 
 
-def load_data(filename, count):
-	i = 0
-	with open(filename, 'r') as f:
-		reader = csv.reader(f)
-		inputs = []
-		outputs = []
-		for row in reader:
-			inputs.append(row[0])
-			outputs.append(int(row[1]))
-			i += 1
-			if i == count:
-				break
-		return inputs, outputs
-
-def w2v(sentence):
-	words = []
-	for word in sentence.split():
-		try:
-			words.append(model[word])
-		except Exception:
-			pass
-
-	return np.array(words)
 
 def one_hot(x):
 	def three(x):
@@ -244,15 +218,6 @@ def one_hot(x):
 	
 	return v
 
-def save_model(BRNN):
-	with open('brnn_model_%s.pkl' % TYPE, 'wb') as f:
-		dill.dump(BRNN, f)
-
-def load_model():
-	with open('brnn_model_%s.pkl' % TYPE, 'rb') as f:
-		BRNN = dill.load(f)
-	return BRNN
-
 if __name__ == "__main__":
 	DATA_SIZE = 10000
 	TYPE = 3
@@ -261,47 +226,11 @@ if __name__ == "__main__":
 	HIDDEN_SIZE = 16
 	OUTPUT_SIZE = TYPE
 
-	#model = Word2Vec.load('model%s' % INPUT_SIZE)
 
 	train_size = DATA_SIZE * 0.8
 	val_size = DATA_SIZE * 0.1
 	test_size = DATA_SIZE * 0.1
 	
-	'''
-	t_i, t_t =  load_data('train.csv', train_size)
-	v_i, v_t = load_data('dev.csv', val_size)
-	ts_i, ts_t =  load_data('test.csv', test_size)
-
-	training_inputs = []
-	training_targets = []
-	for i in range(len(t_i)):
-		v = w2v(t_i[i])
-		if len(v) == 0:
-			continue
-
-		training_inputs.append(v)
-		training_targets.append(one_hot(t_t[i]))
-
-	validation_inputs = []
-	validation_targets = []
-	for i in range(len(v_i)):
-		v = w2v(v_i[i])
-		if len(v) == 0:
-			continue
-
-		validation_inputs.append(v)
-		validation_targets.append(one_hot(v_t[i]))
-
-	testing_inputs = []
-	testing_targets = []
-	for i in range(len(ts_i)):
-		v = w2v(ts_i[i])
-		if len(v) == 0:
-			continue
-
-		testing_inputs.append(v)
-		testing_targets.append(one_hot(ts_t[i]))
-	'''
     
 	train = pickle.load(open('train_phrases_vector.pkl', 'rb'))
 	test = pickle.load(open('test_phrases_vector.pkl', 'rb'))
@@ -324,31 +253,28 @@ if __name__ == "__main__":
 	LEARNING_RATE = 0.20
 	
 	TRAIN = True
-
-	BRNN = None
 	if TRAIN:
 		RNN = RNN(INPUT_SIZE, HIDDEN_SIZE, OUTPUT_SIZE, learning_rate=LEARNING_RATE)
 		RNN.train(training_data=(training_inputs, training_targets), validation_data=(testing_inputs, testing_targets), epochs=EPOCHS, do_dropout=True)
-		save_model(RNN)
+		parameter_dict = {}
+		parameter_dict['hprev'] = RNN.hprev
+		parameter_dict['Why'] = RNN.Why
+		parameter_dict['by'] = RNN.by
+		parameter_dict['Wxh'] = RNN.Wxh
+		parameter_dict['Whh'] = RNN.Whh
+		parameter_dict['bh'] = RNN.bh
+
+		fi = open("rnn_model3.pkl", "wb")
+		pickle.dump(parameter_dict,fi)
+		fi.close()
+		
 	else:
-		RNN = load_model()
+		RNN = pickle.load(open('rnn_model.pkl3', 'rb'))
 
 	accuracy = RNN.predict((testing_inputs, testing_targets), True)
 	
 	print("Accuracy: {:.2f}%".format(accuracy * 100))
 	
-	
-	parameter_dict = {}
-	parameter_dict['hprev'] = RNN.hprev
-	parameter_dict['Why'] = RNN.Why
-	parameter_dict['by'] = RNN.by
-	parameter_dict['Wxh'] = RNN.Wxh
-	parameter_dict['Whh'] = RNN.Whh
-	parameter_dict['bh'] = RNN.bh
-
-	fi = open("new_model", "wb")
-	pickle.dump(parameter_dict,fi)
-	fi.close()
 	
 	
 	'''
@@ -370,4 +296,21 @@ if __name__ == "__main__":
 					out_s.append(TYPE/2)
 
 		print zip(out_p, out_s)
-    '''
+    
+
+def get_sentiment(phrase):
+	INPUT_SIZE = 64
+	HIDDEN_SIZE = 16
+	OUTPUT_SIZE = 3
+	LEARNING_RATE = 0.20
+	parameter_dict = pickle.load(open(os.path.join(os.path.dirname(__file__))+'/rnn_model.pkl', 'rb'))
+	r = RNN(INPUT_SIZE, HIDDEN_SIZE, OUTPUT_SIZE, learning_rate=LEARNING_RATE)
+	r.hprev = parameter_dict['hprev']
+	r.Why = parameter_dict['Why']
+	r.by = parameter_dict['by']
+	r.Wxh = parameter_dict['Wxh']
+	r.Whh = parameter_dict['Whh']
+	r.Whh = parameter_dict['bh']
+	print 'phrase', phrase
+	return r.forward2(phrase)
+	'''
