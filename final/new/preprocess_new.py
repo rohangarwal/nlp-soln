@@ -23,10 +23,10 @@ def filter_out(line):
 
 
 train_lines = []
-with open("special_train_lines.txt", "r") as f:
+with open("test_phrases.txt", "r") as f:
     lines = f.readlines()
     train_lines = [filter_out(line.strip()) for line in lines]
     train_lines = [x for x in train_lines if x[0]]
         
-with open("special_train_lines.pkl", "wb") as f:
+with open("test_phrases.pkl", "wb") as f:
     pickle.dump(train_lines, f)
