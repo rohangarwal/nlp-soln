@@ -19,7 +19,7 @@ def get_sentiment(phrase):
         # return vectors
         # return gru_test.sentiment(vectors, os.path.join(os.path.dirname(__file__), '..', 'Recurrent_NN', 'models', 'g5_lines.pkl'))
         # return vanilla_test.sentiment(vectors, os.path.join(os.path.dirname(__file__), '..', 'Recurrent_NN', 'models', 'v5_phrases.pkl'))
-        fp = '/home/ksameersrk/Documents/nlp-soln/final/new/rnn_model3.pkl'
+        fp = '/home/ksameersrk/Documents/nlp-soln/final/new/rnn_model5.pkl'
         return str(vanilla_test.sentiment(vectors, fp))
     else:
         return "Word Vector is not available"
